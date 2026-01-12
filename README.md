@@ -412,5 +412,3 @@ Apache License 2.0 — see [LICENSE](LICENSE) for details.
 ## Author
 
 Zia — NTT DATA Luxembourg
-
-Built during the 2025/2026 holiday season on NVIDIA DGX Spark.
