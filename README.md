@@ -4,7 +4,7 @@ Deploy a local, sovereign AI stack on NVIDIA DGX Spark using k3s, vLLM, and Open
 
 ![NVIDIA DGX Spark](https://img.shields.io/badge/NVIDIA-DGX%20Spark-76B900?style=flat&logo=nvidia)
 ![Kubernetes](https://img.shields.io/badge/k3s-v1.34-326CE5?style=flat&logo=kubernetes)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)
 
 ## Overview
 
@@ -407,7 +407,7 @@ From [NVIDIA vLLM Release Notes](https://docs.nvidia.com/deeplearning/frameworks
 
 ## License
 
-MIT License — feel free to use and modify.
+Apache License 2.0 — see [LICENSE](LICENSE) for details.
 
 ## Author
 
