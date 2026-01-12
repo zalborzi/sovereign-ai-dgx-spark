@@ -310,6 +310,16 @@ Open http://127.0.0.1:8080 in your browser.
 4. Click **Save** and refresh the page
 5. Select `mistralai/Mistral-7B-Instruct-v0.3` from the model dropdown
 
+## Demo
+
+### Backend - vLLM serving Mistral 7B
+
+https://github.com/zalborzi/sovereign-ai-dgx-spark/raw/main/demo/Back.webm
+
+### Frontend - Open WebUI
+
+https://github.com/zalborzi/sovereign-ai-dgx-spark/raw/main/demo/Front.webm
+
 ## Project Structure
 
 ```
