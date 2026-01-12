@@ -314,11 +314,11 @@ Open http://127.0.0.1:8080 in your browser.
 
 ### Backend - vLLM serving Mistral 7B
 
-<video src="https://github.com/zalborzi/sovereign-ai-dgx-spark/raw/main/demo/Back.webm" controls width="100%"></video>
+https://github.com/YOUR_USERNAME/sovereign-ai-dgx-spark/raw/main/demo/Back.webm
 
 ### Frontend - Open WebUI
 
-<video src="https://github.com/zalborzi/sovereign-ai-dgx-spark/raw/main/demo/Front.webm" controls width="100%"></video>
+https://github.com/YOUR_USERNAME/sovereign-ai-dgx-spark/raw/main/demo/Front.webm
 
 ## Project Structure
 
