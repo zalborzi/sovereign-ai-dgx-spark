@@ -1,0 +1,65 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mistral
+  namespace: llm
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mistral
+  template:
+    metadata:
+      labels:
+        app: mistral
+    spec:
+      runtimeClassName: nvidia
+      volumes:
+      - name: hf-cache
+        persistentVolumeClaim:
+          claimName: hf-cache
+      - name: shm
+        emptyDir:
+          medium: Memory
+          sizeLimit: 2Gi
+      containers:
+      - name: vllm
+        image: nvcr.io/nvidia/vllm:25.11-py3
+        command: ["vllm", "serve"]
+        args:
+        - "mistralai/Mistral-7B-Instruct-v0.3"
+        - "--host=0.0.0.0"
+        - "--max-model-len=8192"
+        - "--gpu-memory-utilization=0.7"
+        env:
+        - name: HF_TOKEN
+          valueFrom:
+            secretKeyRef:
+              name: hf-token
+              key: token
+        ports:
+        - containerPort: 8000
+        resources:
+          limits:
+            nvidia.com/gpu: 1
+            memory: 24Gi
+          requests:
+            nvidia.com/gpu: 1
+            memory: 12Gi
+        volumeMounts:
+        - name: hf-cache
+          mountPath: /root/.cache/huggingface
+        - name: shm
+          mountPath: /dev/shm
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mistral
+  namespace: llm
+spec:
+  selector:
+    app: mistral
+  ports:
+  - port: 8000
+    targetPort: 8000
