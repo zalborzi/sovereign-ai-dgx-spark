@@ -421,4 +421,4 @@ Apache License 2.0 — see [LICENSE](LICENSE) for details.
 
 ## Author
 
-Zia — NTT DATA Luxembourg
+Zia — NTT Luxembourg
