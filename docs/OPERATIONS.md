@@ -254,8 +254,8 @@ Recommended demo users:
 
 ```text
 admin   = admin
-finance = finance user
-normal  = normal user
+finance-user = finance user
+normal-user  = normal user
 ```
 
 Demo story:
@@ -279,9 +279,9 @@ examples/finance-rag-access-control/
 Recommended Open WebUI setup:
 
 - base model public
-- restricted finance knowledge visible only to Finance group
-- finance-user in Finance group
-- normal-user not in Finance group
+- restricted finance knowledge visible only to Finance Analysts group
+- finance-user in Finance Analysts group
+- normal-user not in Finance Analysts group
 
 Do not make the base model private. If the base model is private, wrapper models or users may show `Model not found`.
 

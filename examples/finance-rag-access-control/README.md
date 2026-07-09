@@ -151,6 +151,6 @@ Use this wording:
 ```text
 The model is shared; the data is not.
 finance-user and normal-user use the same local Mistral model on DGX Spark.
-finance-user can retrieve the restricted finance document because she is in the Finance group.
+finance-user can retrieve the restricted finance document because she is in the Finance Analysts group.
 normal-user cannot retrieve it because he is not in that group.
 ```

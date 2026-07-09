@@ -12,6 +12,8 @@ Deploy a local, sovereign AI stack on **NVIDIA DGX Spark** using **k3s**, **NVID
 
 ---
 
+## Architecture
+
 ![Sovereign AI on NVIDIA DGX Spark](docs/images/sovereign-ai-architecture.png)
 
 The stack runs locally on DGX Spark and exposes a browser-based Open WebUI interface through a local port-forward.
@@ -64,6 +66,10 @@ This repository provides:
 sovereign-ai-dgx-spark/
 ├── README.md
 ├── LICENSE
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
+├── SECURITY.md
+├── demo/
 ├── manifests/
 │   ├── 00-gpu-smoke.yaml
 │   ├── 01-hf-cache-pvc.yaml
@@ -74,6 +80,7 @@ sovereign-ai-dgx-spark/
 │   ├── stop-demo.sh
 │   └── cleanup.sh
 ├── docs/
+│   ├── images/
 │   ├── ARCHITECTURE.md
 │   ├── INSTALL.md
 │   ├── OFFLINE.md

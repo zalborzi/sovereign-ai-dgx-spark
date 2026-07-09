@@ -530,9 +530,9 @@ Access control is wrong.
 
 - keep finance KB restricted
 - keep synthetic finance numbers only inside restricted KB
-- create Finance group
-- add finance-user to Finance group
-- keep normal-user outside Finance group
+- create Finance Analysts group
+- add finance-user to Finance Analysts group
+- keep normal-user outside Finance Analysts group
 - start a new chat for each user test
 
 ---
@@ -541,7 +541,7 @@ Access control is wrong.
 
 ### Check
 
-- finance-user is in the Finance group
+- finance-user is in the Finance Analysts group
 - KB is attached to the correct model
 - KB is indexed
 - chat uses the right model

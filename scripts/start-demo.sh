@@ -144,7 +144,7 @@ echo ""
 echo "Project folder:"
 echo "$PROJECT_DIR"
 echo ""
-echo "Please wait. First start can take 3–5 minutes."
+echo "Please wait. Warm start takes 3–5 minutes. A first-ever start (model download) can take 15–30 minutes."
 echo "Do not close this window."
 echo ""
 
