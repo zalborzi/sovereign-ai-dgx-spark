@@ -230,9 +230,9 @@ Open WebUI:
 $URL
 
 Users:
-- Katja = Finance user
-- Ralf = Normal user
-- Zia = Admin"
+- finance-user = Finance user
+- normal-user = Normal user
+- admin = Admin"
 
 echo ""
 echo "======================================"

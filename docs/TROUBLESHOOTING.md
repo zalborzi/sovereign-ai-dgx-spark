@@ -512,7 +512,7 @@ Then refresh Open WebUI.
 
 ---
 
-## 15. Finance RAG: Katja sees data but Ralf also sees data
+## 15. Finance RAG: finance-user sees data but normal-user also sees data
 
 ### Meaning
 
@@ -524,24 +524,24 @@ Access control is wrong.
 - group membership
 - model visibility
 - whether restricted numbers were pasted into a public system prompt
-- whether Ralf is using a public chat where context was already injected
+- whether normal-user is using a public chat where context was already injected
 
 ### Fix
 
 - keep finance KB restricted
 - keep synthetic finance numbers only inside restricted KB
 - create Finance group
-- add Katja to Finance group
-- keep Ralf outside Finance group
+- add finance-user to Finance group
+- keep normal-user outside Finance group
 - start a new chat for each user test
 
 ---
 
-## 16. Finance RAG: Katja does not retrieve finance data
+## 16. Finance RAG: finance-user does not retrieve finance data
 
 ### Check
 
-- Katja is in the Finance group
+- finance-user is in the Finance group
 - KB is attached to the correct model
 - KB is indexed
 - chat uses the right model

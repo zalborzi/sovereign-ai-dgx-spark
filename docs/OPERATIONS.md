@@ -253,9 +253,9 @@ curl http://127.0.0.1:8000/v1/chat/completions   -H "Content-Type: application/j
 Recommended demo users:
 
 ```text
-Zia   = admin
-Katja = finance user
-Ralf  = normal user
+admin   = admin
+finance = finance user
+normal  = normal user
 ```
 
 Demo story:
@@ -280,12 +280,12 @@ Recommended Open WebUI setup:
 
 - base model public
 - restricted finance knowledge visible only to Finance group
-- Katja in Finance group
-- Ralf not in Finance group
+- finance-user in Finance group
+- normal-user not in Finance group
 
 Do not make the base model private. If the base model is private, wrapper models or users may show `Model not found`.
 
-Recommended test for Katja:
+Recommended test for finance-user:
 
 ```text
 Using only Restricted Finance Q3 2026, answer:
@@ -299,7 +299,7 @@ Expected:
 - answers with restricted numbers
 - uses retrieved finance context
 
-Recommended test for Ralf:
+Recommended test for normal-user:
 
 ```text
 What was DemoCorp's Q3 2026 revenue and acquisition target price?
@@ -393,7 +393,7 @@ Then test:
 Should I do an outdoor customer demo in Luxembourg tomorrow?
 ```
 
-If finance RAG is part of the demo, test Katja and Ralf before showing it.
+If finance RAG is part of the demo, test finance-user and normal-user before showing it.
 
 ---
 

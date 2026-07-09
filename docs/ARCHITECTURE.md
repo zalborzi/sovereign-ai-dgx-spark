@@ -356,14 +356,14 @@ Different knowledge access.
 
 Example users:
 
-- Zia: admin
-- Katja: finance user
-- Ralf: normal user
+- admin: admin
+- finance-user: finance user
+- normal-user: normal user
 
 Expected behavior:
 
-- Katja can access the restricted synthetic finance knowledge base.
-- Ralf cannot access it.
+- finance-user can access the restricted synthetic finance knowledge base.
+- normal-user cannot access it.
 - The model is shared.
 - Data access is controlled at the retrieval/knowledge layer.
 
