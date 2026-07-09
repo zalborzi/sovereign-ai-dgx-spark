@@ -9,7 +9,8 @@ metadata:
   name: openwebui-data
   namespace: ui
 spec:
-  accessModes: [ReadWriteOnce]
+  accessModes:
+  - ReadWriteOnce
   resources:
     requests:
       storage: 10Gi
@@ -19,8 +20,12 @@ kind: Deployment
 metadata:
   name: openwebui
   namespace: ui
+  labels:
+    app: openwebui
 spec:
   replicas: 1
+  strategy:
+    type: Recreate
   selector:
     matchLabels:
       app: openwebui
@@ -29,14 +34,37 @@ spec:
       labels:
         app: openwebui
     spec:
+      terminationGracePeriodSeconds: 30
       containers:
       - name: openwebui
-        image: ghcr.io/open-webui/open-webui:main
+        image: ghcr.io/open-webui/open-webui:v0.10.2
+        imagePullPolicy: IfNotPresent
         ports:
-        - containerPort: 8080
+        - name: http
+          containerPort: 8080
         env:
         - name: WEBUI_SECRET_KEY
-          value: "change-me-in-production"
+          value: change-me-in-production
+        - name: WEBUI_NAME
+          value: DGX Sovereign AI Demo
+        - name: DEFAULT_MODELS
+          value: mistralai/Mistral-7B-Instruct-v0.3
+        - name: HF_HUB_OFFLINE
+          value: "1"
+        - name: TRANSFORMERS_OFFLINE
+          value: "1"
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 8080
+          initialDelaySeconds: 30
+          periodSeconds: 10
+          failureThreshold: 30
+        resources:
+          requests:
+            memory: 1Gi
+          limits:
+            memory: 4Gi
         volumeMounts:
         - name: data
           mountPath: /app/backend/data
@@ -50,9 +78,12 @@ kind: Service
 metadata:
   name: openwebui
   namespace: ui
+  labels:
+    app: openwebui
 spec:
   selector:
     app: openwebui
   ports:
-  - port: 80
+  - name: http
+    port: 80
     targetPort: 8080

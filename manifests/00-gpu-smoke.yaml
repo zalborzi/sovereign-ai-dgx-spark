@@ -1,15 +1,38 @@
 apiVersion: v1
-kind: Pod
+kind: Namespace
+metadata:
+  name: llm
+---
+apiVersion: batch/v1
+kind: Job
 metadata:
   name: gpu-smoke
   namespace: llm
 spec:
-  restartPolicy: Never
-  runtimeClassName: nvidia
-  containers:
-  - name: cuda
-    image: nvcr.io/nvidia/cuda:12.2.0-base-ubuntu22.04
-    command: ["nvidia-smi"]
-    resources:
-      limits:
-        nvidia.com/gpu: 1
+  backoffLimit: 0
+  ttlSecondsAfterFinished: 300
+  template:
+    metadata:
+      labels:
+        app: gpu-smoke
+    spec:
+      restartPolicy: Never
+      runtimeClassName: nvidia
+      containers:
+      - name: gpu-smoke
+        image: nvcr.io/nvidia/vllm:25.11-py3
+        imagePullPolicy: IfNotPresent
+        command:
+        - /bin/bash
+        - -lc
+        args:
+        - |
+          echo "=== NVIDIA GPU smoke test ==="
+          nvidia-smi
+          echo ""
+          echo "GPU smoke test completed."
+        resources:
+          limits:
+            nvidia.com/gpu: 1
+          requests:
+            nvidia.com/gpu: 1
