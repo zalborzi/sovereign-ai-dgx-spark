@@ -163,6 +163,30 @@ Do not commit a real Hugging Face token to GitHub.
 
 ## 6. Apply Kubernetes manifests
 
+### First install only: allow the model download
+
+The manifests default to offline mode. `manifests/02-mistral-vllm.yaml` sets:
+
+```yaml
+- name: HF_HUB_OFFLINE
+  value: "1"
+- name: TRANSFORMERS_OFFLINE
+  value: "1"
+```
+
+On a clean machine the model cache is still empty, so the first start must be allowed to download the model. Before applying the manifests for the first time, edit `manifests/02-mistral-vllm.yaml` and set both values to `"0"`.
+
+After the first successful start (chat works), set both values back to `"1"` and apply:
+
+```bash
+kubectl apply -f manifests/02-mistral-vllm.yaml
+kubectl -n llm rollout restart deployment/mistral
+```
+
+See `docs/OFFLINE.md` section 11 for details.
+
+### Apply the manifests
+
 From the repository root:
 
 ```bash
