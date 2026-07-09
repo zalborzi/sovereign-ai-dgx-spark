@@ -1,424 +1,388 @@
 # Sovereign AI on NVIDIA DGX Spark
 
-Deploy a local, sovereign AI stack on NVIDIA DGX Spark using k3s, vLLM, and Open WebUI.
+Deploy a local, sovereign AI stack on **NVIDIA DGX Spark** using **k3s**, **NVIDIA GPU Operator**, **vLLM**, and **Open WebUI**.
 
 ![NVIDIA DGX Spark](https://img.shields.io/badge/NVIDIA-DGX%20Spark-76B900?style=flat&logo=nvidia)
-![Kubernetes](https://img.shields.io/badge/k3s-v1.34-326CE5?style=flat&logo=kubernetes)
+![Kubernetes](https://img.shields.io/badge/k3s-lightweight%20Kubernetes-326CE5?style=flat&logo=kubernetes)
+![vLLM](https://img.shields.io/badge/vLLM-OpenAI%20compatible-1f6feb?style=flat)
+![Open WebUI](https://img.shields.io/badge/Open%20WebUI-local%20chat%20interface-111827?style=flat)
 ![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)
 
-## Overview
+> Local LLM inference, permission-aware RAG, and simple tool-calling demos on DGX Spark.
 
-This project provides a complete guide for deploying Mistral 7B (or other LLMs) on NVIDIA DGX Spark hardware using:
+---
 
-- **k3s** — Lightweight Kubernetes distribution
-- **NVIDIA GPU Operator** — Automated GPU management for Kubernetes
-- **vLLM** — High-performance LLM inference engine
-- **Open WebUI** — ChatGPT-style interface for local models
+## Architecture
 
-### Hardware
+> Add the generated architecture image here:
+>
+> ```text
+> docs/images/sovereign-ai-architecture.png
+> ```
 
-| Component | Specification |
-|-----------|---------------|
-| Platform | NVIDIA DGX Spark |
-| GPU | NVIDIA GB10 (Blackwell) |
-| Architecture | ARM64 |
+![Sovereign AI on NVIDIA DGX Spark](docs/images/sovereign-ai-architecture.png)
+
+The stack runs locally on DGX Spark and exposes a browser-based Open WebUI interface through a local port-forward.
+
+```text
+Users
+  → Open WebUI
+  → vLLM OpenAI-compatible API
+  → Mistral-7B-Instruct-v0.3
+  → NVIDIA GB10 GPU on DGX Spark
+```
+
+---
+
+## What this repository contains
+
+This repository provides:
+
+- Kubernetes manifests for running vLLM and Open WebUI on DGX Spark
+- persistent Hugging Face model cache configuration
+- offline-ready startup behavior after the model is cached
+- one-command demo start and stop scripts
+- documentation for installation, operation, offline use, architecture, and troubleshooting
+- reusable demo examples:
+  - finance RAG access control
+  - weather travel agent
+
+---
+
+## Stack
+
+| Layer | Component |
+|---|---|
+| Hardware | NVIDIA DGX Spark |
+| GPU | NVIDIA GB10 |
 | OS | Ubuntu 24.04 |
-| CUDA | 13.0 |
-| Driver | 580.95.05 |
+| Kubernetes | k3s |
+| GPU integration | NVIDIA GPU Operator |
+| Model serving | vLLM |
+| Chat UI | Open WebUI |
+| Default model | `mistralai/Mistral-7B-Instruct-v0.3` |
+| Model cache | Hugging Face cache PVC |
+| Access URL | `http://dgx-demo.test:18080` |
 
-## Prerequisites
-
-Before starting, verify your GPU setup:
-
-```bash
-# Driver check
-nvidia-smi
-
-# Container toolkit check
-nvidia-container-cli info
-```
-
-Both commands must succeed before proceeding.
-
-## Quick Start
-
-### 1. Install k3s
-
-```bash
-curl -sfL https://get.k3s.io | sh -s - --write-kubeconfig-mode 644
-export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
-```
-
-Verify:
-```bash
-kubectl get nodes
-# Should show node as "Ready"
-
-grep nvidia /var/lib/rancher/k3s/agent/etc/containerd/config.toml
-# Should show nvidia runtime entries
-```
-
-### 2. Install Helm
-
-```bash
-curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
-```
-
-### 3. Install NVIDIA GPU Operator
-
-```bash
-helm repo add nvidia https://helm.ngc.nvidia.com/nvidia
-helm repo update
-
-helm install gpu-operator nvidia/gpu-operator \
-  --namespace gpu-operator \
-  --create-namespace \
-  --set driver.enabled=false \
-  --set toolkit.env[0].name=CONTAINERD_CONFIG \
-  --set toolkit.env[0].value=/var/lib/rancher/k3s/agent/etc/containerd/config.toml \
-  --set toolkit.env[1].name=CONTAINERD_SOCKET \
-  --set toolkit.env[1].value=/run/k3s/containerd/containerd.sock
-```
-
-Wait for all pods to be ready (~2-5 minutes):
-```bash
-kubectl get pods -n gpu-operator -w
-```
-
-Verify GPU is exposed to Kubernetes:
-```bash
-kubectl get nodes -o json | jq '.items[].status.allocatable'
-# Should show: "nvidia.com/gpu": "1"
-```
-
-### 4. Deploy vLLM with Mistral 7B
-
-Create namespace and resources:
-
-```bash
-kubectl create ns llm
-```
-
-#### PersistentVolumeClaim for model cache
-
-```yaml
-# manifests/01-hf-cache-pvc.yaml
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: hf-cache
-  namespace: llm
-spec:
-  accessModes: [ReadWriteOnce]
-  resources:
-    requests:
-      storage: 50Gi
-```
-
-```bash
-kubectl apply -f manifests/01-hf-cache-pvc.yaml
-```
-
-#### HuggingFace Token Secret
-
-Get your token from https://huggingface.co/settings/tokens (required for gated models like Mistral).
-
-```bash
-kubectl -n llm create secret generic hf-token \
-  --from-literal=token=hf_YOUR_TOKEN_HERE
-```
-
-#### vLLM Deployment
-
-> **Important for DGX Spark:** Use `--gpu-memory-utilization=0.7` to avoid OOM errors on unified memory architecture.
-
-```yaml
-# manifests/02-mistral-vllm.yaml
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: mistral
-  namespace: llm
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: mistral
-  template:
-    metadata:
-      labels:
-        app: mistral
-    spec:
-      runtimeClassName: nvidia
-      volumes:
-      - name: hf-cache
-        persistentVolumeClaim:
-          claimName: hf-cache
-      - name: shm
-        emptyDir:
-          medium: Memory
-          sizeLimit: 2Gi
-      containers:
-      - name: vllm
-        image: nvcr.io/nvidia/vllm:25.11-py3
-        command: ["vllm", "serve"]
-        args:
-        - "mistralai/Mistral-7B-Instruct-v0.3"
-        - "--host=0.0.0.0"
-        - "--max-model-len=8192"
-        - "--gpu-memory-utilization=0.7"
-        env:
-        - name: HF_TOKEN
-          valueFrom:
-            secretKeyRef:
-              name: hf-token
-              key: token
-        ports:
-        - containerPort: 8000
-        resources:
-          limits:
-            nvidia.com/gpu: 1
-            memory: 24Gi
-          requests:
-            nvidia.com/gpu: 1
-            memory: 12Gi
-        volumeMounts:
-        - name: hf-cache
-          mountPath: /root/.cache/huggingface
-        - name: shm
-          mountPath: /dev/shm
 ---
-apiVersion: v1
-kind: Service
-metadata:
-  name: mistral
-  namespace: llm
-spec:
-  selector:
-    app: mistral
-  ports:
-  - port: 8000
-    targetPort: 8000
-```
 
-```bash
-kubectl apply -f manifests/02-mistral-vllm.yaml
-kubectl -n llm get pods -w
-```
+## Repository structure
 
-First startup takes 15-30 minutes (image pull + model download + CUDA graph compilation).
-
-#### Test the API
-
-```bash
-kubectl -n llm port-forward svc/mistral 8000:8000
-```
-
-```bash
-curl http://127.0.0.1:8000/v1/chat/completions \
-  -H "Content-Type: application/json" \
-  -d '{
-    "model":"mistralai/Mistral-7B-Instruct-v0.3",
-    "messages":[{"role":"user","content":"Say hello in one sentence."}],
-    "max_tokens":50
-  }'
-```
-
-### 5. Deploy Open WebUI
-
-```yaml
-# manifests/10-openwebui.yaml
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: ui
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: openwebui-data
-  namespace: ui
-spec:
-  accessModes: [ReadWriteOnce]
-  resources:
-    requests:
-      storage: 10Gi
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: openwebui
-  namespace: ui
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: openwebui
-  template:
-    metadata:
-      labels:
-        app: openwebui
-    spec:
-      containers:
-      - name: openwebui
-        image: ghcr.io/open-webui/open-webui:main
-        ports:
-        - containerPort: 8080
-        env:
-        - name: WEBUI_SECRET_KEY
-          value: "change-me-in-production"
-        volumeMounts:
-        - name: data
-          mountPath: /app/backend/data
-      volumes:
-      - name: data
-        persistentVolumeClaim:
-          claimName: openwebui-data
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: openwebui
-  namespace: ui
-spec:
-  selector:
-    app: openwebui
-  ports:
-  - port: 80
-    targetPort: 8080
-```
-
-```bash
-kubectl apply -f manifests/10-openwebui.yaml
-kubectl -n ui get pods -w
-```
-
-Access the UI:
-```bash
-kubectl -n ui port-forward svc/openwebui 8080:80
-```
-
-Open http://127.0.0.1:8080 in your browser.
-
-#### Configure Open WebUI
-
-1. Create an admin account (first user)
-2. Go to **Admin Panel → Settings → Connections**
-3. Under **OpenAI API**, click **+** to add connection:
-   - **URL:** `http://mistral.llm.svc.cluster.local:8000/v1`
-   - **API Key:** `sk-dummy` (vLLM doesn't require auth)
-4. Click **Save** and refresh the page
-5. Select `mistralai/Mistral-7B-Instruct-v0.3` from the model dropdown
-
-## Demo
-
-### Backend - vLLM serving Mistral 7B
-
-https://github.com/zalborzi/sovereign-ai-dgx-spark/raw/main/demo/Back.webm
-
-### Frontend - Open WebUI
-
-https://github.com/zalborzi/sovereign-ai-dgx-spark/raw/main/demo/Front.webm
-
-## Project Structure
-
-```
+```text
 sovereign-ai-dgx-spark/
 ├── README.md
+├── LICENSE
 ├── manifests/
-│   ├── 00-gpu-smoke.yaml          # GPU sanity test pod
-│   ├── 01-hf-cache-pvc.yaml       # Model cache storage
-│   ├── 02-mistral-vllm.yaml       # vLLM deployment
-│   └── 10-openwebui.yaml          # Open WebUI deployment
-└── scripts/
-    └── cleanup.sh                  # Full cleanup script
+│   ├── 00-gpu-smoke.yaml
+│   ├── 01-hf-cache-pvc.yaml
+│   ├── 02-mistral-vllm.yaml
+│   └── 10-openwebui.yaml
+├── scripts/
+│   ├── start-demo.sh
+│   ├── stop-demo.sh
+│   └── cleanup.sh
+├── docs/
+│   ├── ARCHITECTURE.md
+│   ├── INSTALL.md
+│   ├── OFFLINE.md
+│   ├── OPERATIONS.md
+│   └── TROUBLESHOOTING.md
+└── examples/
+    ├── finance-rag-access-control/
+    └── weather-travel-agent/
 ```
 
-## Troubleshooting
+---
 
-### GPU not visible in Kubernetes
+## Quick start
+
+Clone the repository:
 
 ```bash
-# Check GPU Operator pods
-kubectl get pods -n gpu-operator
+git clone https://github.com/zalborzi/sovereign-ai-dgx-spark.git
+cd sovereign-ai-dgx-spark
+```
 
-# Check node labels
-kubectl get node --show-labels | tr ',' '\n' | grep nvidia
+Install and configure the platform by following:
 
-# Verify nvidia.com/gpu in allocatable
+```text
+docs/INSTALL.md
+```
+
+At a high level, installation requires:
+
+1. working NVIDIA driver and container toolkit
+2. k3s
+3. Helm
+4. NVIDIA GPU Operator
+5. Hugging Face token secret
+6. Kubernetes manifests
+7. Open WebUI configuration
+
+---
+
+## Run the demo
+
+Start:
+
+```bash
+./scripts/start-demo.sh
+```
+
+Open WebUI:
+
+```text
+http://dgx-demo.test:18080
+```
+
+Stop:
+
+```bash
+./scripts/stop-demo.sh
+```
+
+Do **not** use `cleanup.sh` for normal shutdown.
+
+---
+
+## Full cleanup
+
+Use only for full machine reset or handover:
+
+```bash
+sudo ./scripts/cleanup.sh
+```
+
+Non-interactive:
+
+```bash
+sudo FORCE=1 ./scripts/cleanup.sh
+```
+
+This removes k3s and local Kubernetes state. It does not remove the NVIDIA driver.
+
+---
+
+## Open WebUI connection
+
+After the first Open WebUI login, configure the OpenAI-compatible endpoint:
+
+```text
+Admin Panel → Settings → Connections → OpenAI API
+```
+
+Use:
+
+```text
+URL: http://mistral.llm.svc.cluster.local:8000/v1
+API Key: sk-dummy
+```
+
+Then select:
+
+```text
+mistralai/Mistral-7B-Instruct-v0.3
+```
+
+---
+
+## Offline-ready model cache
+
+The vLLM deployment uses a persistent Hugging Face cache PVC:
+
+```text
+hf-cache
+```
+
+Mounted at:
+
+```text
+/root/.cache/huggingface
+```
+
+After the model is downloaded once, the demo can be started without downloading the model again.
+
+Important:
+
+```text
+Do not delete the hf-cache PVC unless you want to re-download the model.
+```
+
+See:
+
+```text
+docs/OFFLINE.md
+```
+
+---
+
+## Demo examples
+
+### Finance RAG Access Control
+
+Path:
+
+```text
+examples/finance-rag-access-control/
+```
+
+Purpose:
+
+```text
+Same local model.
+Different users.
+Different knowledge access.
+```
+
+Demo users:
+
+```text
+admin
+finance-user
+normal-user
+```
+
+Key message:
+
+```text
+The model is shared; the data is not.
+```
+
+The finance example uses a synthetic restricted finance document. The `finance-user` can access the restricted knowledge base. The `normal-user` cannot.
+
+---
+
+### Weather Travel Agent
+
+Path:
+
+```text
+examples/weather-travel-agent/
+```
+
+Purpose:
+
+```text
+Local LLM + controlled external tool + live weather recommendation.
+```
+
+Example prompt:
+
+```text
+Should I do an outdoor customer demo in Luxembourg tomorrow?
+```
+
+This demo calls Open-Meteo through an Open WebUI Python tool. It needs internet for live weather.
+
+---
+
+## Documentation
+
+| Document | Purpose |
+|---|---|
+| [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) | Architecture and component overview |
+| [`docs/INSTALL.md`](docs/INSTALL.md) | Clean installation guide |
+| [`docs/OFFLINE.md`](docs/OFFLINE.md) | Offline cache behavior and verification |
+| [`docs/OPERATIONS.md`](docs/OPERATIONS.md) | Day-to-day start, stop, and demo operation |
+| [`docs/TROUBLESHOOTING.md`](docs/TROUBLESHOOTING.md) | Common problems and fixes |
+
+---
+
+## Useful commands
+
+Check nodes:
+
+```bash
+kubectl get nodes
+```
+
+Check GPU allocation:
+
+```bash
 kubectl get nodes -o json | jq '.items[].status.allocatable'
 ```
 
-### vLLM pod stuck in ContainerCreating
+Check vLLM logs:
 
 ```bash
-# Check events
-kubectl -n llm describe pod -l app=mistral
-
-# Image pull takes 10-15 minutes for the first time (~6GB image)
+kubectl -n llm logs deployment/mistral --tail=120
 ```
 
-### vLLM OOM errors
-
-DGX Spark has unified memory. Reduce GPU memory utilization:
-```yaml
-args:
-  - "--gpu-memory-utilization=0.6"  # Try lower values
-```
-
-### Model download progress
+Follow vLLM logs:
 
 ```bash
-kubectl -n llm exec deployment/mistral -- du -sh /root/.cache/huggingface/
+kubectl -n llm logs deployment/mistral -f
 ```
 
-### Open WebUI can't connect to vLLM
-
-Verify internal DNS works:
-```bash
-kubectl -n ui exec deployment/openwebui -- \
-  curl -s http://mistral.llm.svc.cluster.local:8000/v1/models
-```
-
-## Cleanup
-
-To completely remove everything:
+Check Open WebUI logs:
 
 ```bash
-# Uninstall k3s (removes all Kubernetes resources)
-/usr/local/bin/k3s-uninstall.sh
-
-# Remove Helm
-sudo rm -f /usr/local/bin/helm
-
-# Clean up directories
-sudo rm -rf /etc/rancher /var/lib/rancher
-rm -rf ~/.config/helm ~/.cache/helm ~/.kube
-
-# Remove project files
-rm -rf ~/sovereign-ai-dgx-spark
+kubectl -n ui logs deployment/openwebui --tail=120
 ```
 
-## DGX Spark-Specific Notes
+Check Open WebUI internal access to vLLM:
 
-From [NVIDIA vLLM Release Notes](https://docs.nvidia.com/deeplearning/frameworks/vllm-release-notes/):
+```bash
+kubectl -n ui exec deployment/openwebui --   curl -s http://mistral.llm.svc.cluster.local:8000/v1/models
+```
 
-> vllm serve uses aggressive GPU memory allocation by default. On systems with shared/unified GPU memory (e.g. DGX Spark or Jetson platforms), this can lead to out-of-memory errors. Use `--gpu-memory-utilization 0.7` or lower.
+Check local browser endpoint:
 
-> On DGX Spark, workloads utilizing FP8 models may fail with CUDA stream capture errors due to illegal synchronization operations in FlashInfer kernels.
+```bash
+curl --noproxy '*' -I http://dgx-demo.test:18080
+```
+
+---
+
+## Notes and limitations
+
+This repository is intended for a local DGX Spark demo and learning environment.
+
+It is not a production-hardened deployment.
+
+Not included by default:
+
+- production ingress
+- TLS
+- enterprise SSO
+- Kubernetes NetworkPolicies
+- external secret management
+- monitoring and alerting
+- backup and restore
+- audit-grade governance
+- hardened multi-tenant isolation
+
+For production use, review the architecture, security boundaries, identity model, network model, and data governance requirements.
+
+---
+
+## Security notes
+
+- Do not commit real Hugging Face tokens.
+- Replace demo secrets before real use.
+- Open WebUI tools execute Python code on the Open WebUI server.
+- Only trusted admins should create or edit Open WebUI tools.
+- The finance demo data is synthetic and must stay synthetic.
+
+---
 
 ## References
 
 - [k3s Documentation](https://docs.k3s.io/)
-- [k3s NVIDIA Container Runtime Support](https://docs.k3s.io/advanced#nvidia-container-runtime)
 - [NVIDIA GPU Operator](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/getting-started.html)
 - [vLLM Documentation](https://docs.vllm.ai/)
 - [Open WebUI](https://github.com/open-webui/open-webui)
+- [Open-Meteo](https://open-meteo.com/)
+- [Hugging Face](https://huggingface.co/)
+
+---
 
 ## License
 
-Apache License 2.0 — see [LICENSE](LICENSE) for details.
+Apache License 2.0 — see [`LICENSE`](LICENSE).
+
+---
 
 ## Author
 
-Zia — NTT Luxembourg
+Zia Alborzi - NTT Luxembourg
