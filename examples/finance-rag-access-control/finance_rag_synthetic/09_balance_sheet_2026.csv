@@ -1,0 +1,12 @@
+section,line_item,amount_eur,as_of_date,classification,synthetic_record
+Assets,Cash and cash equivalents,1780000,2026-12-31,FINANCE_RESTRICTED_AGGREGATE,True
+Assets,Accounts receivable,1644856.29,2026-12-31,FINANCE_RESTRICTED_AGGREGATE,True
+Assets,Unbilled revenue / contract assets,2280273.0,2026-12-31,FINANCE_RESTRICTED_AGGREGATE,True
+Assets,Prepaid expenses,185000,2026-12-31,FINANCE_RESTRICTED_AGGREGATE,True
+Assets,"Property and equipment, net",620000,2026-12-31,FINANCE_RESTRICTED_AGGREGATE,True
+Liabilities,Accounts payable,740000,2026-12-31,FINANCE_RESTRICTED_AGGREGATE,True
+Liabilities,Accrued payroll and bonuses,690000,2026-12-31,FINANCE_RESTRICTED_AGGREGATE,True
+Liabilities,Deferred revenue,910000,2026-12-31,FINANCE_RESTRICTED_AGGREGATE,True
+Liabilities,Lease liabilities,430000,2026-12-31,FINANCE_RESTRICTED_AGGREGATE,True
+Equity,Share capital and reserves,1550000,2026-12-31,FINANCE_RESTRICTED_AGGREGATE,True
+Equity,Retained earnings including 2026 profit,56251.13,2026-12-31,FINANCE_RESTRICTED_AGGREGATE,True

@@ -1,0 +1,169 @@
+month,expense_category,department_owner,supplier_name,actual_cost_eur,budget_cost_eur,variance_eur,classification,synthetic_record
+2026-01,Office rent and facilities,Corporate,Synthetic Supplier - Office,35100.0,39000.0,-3900.0,FINANCE_RESTRICTED,True
+2026-02,Office rent and facilities,Corporate,Synthetic Supplier - Office,35100.0,39000.0,-3900.0,FINANCE_RESTRICTED,True
+2026-03,Office rent and facilities,Corporate,Synthetic Supplier - Office,37440.0,39000.0,-1560.0,FINANCE_RESTRICTED,True
+2026-04,Office rent and facilities,Corporate,Synthetic Supplier - Office,37440.0,39000.0,-1560.0,FINANCE_RESTRICTED,True
+2026-05,Office rent and facilities,Corporate,Synthetic Supplier - Office,39780.0,39000.0,780.0,FINANCE_RESTRICTED,True
+2026-06,Office rent and facilities,Corporate,Synthetic Supplier - Office,39780.0,39000.0,780.0,FINANCE_RESTRICTED,True
+2026-07,Office rent and facilities,Corporate,Synthetic Supplier - Office,32760.0,39000.0,-6240.0,FINANCE_RESTRICTED,True
+2026-08,Office rent and facilities,Corporate,Synthetic Supplier - Office,30420.0,39000.0,-8580.0,FINANCE_RESTRICTED,True
+2026-09,Office rent and facilities,Corporate,Synthetic Supplier - Office,42120.0,39000.0,3120.0,FINANCE_RESTRICTED,True
+2026-10,Office rent and facilities,Corporate,Synthetic Supplier - Office,44460.0,39000.0,5460.0,FINANCE_RESTRICTED,True
+2026-11,Office rent and facilities,Corporate,Synthetic Supplier - Office,42120.0,39000.0,3120.0,FINANCE_RESTRICTED,True
+2026-12,Office rent and facilities,Corporate,Synthetic Supplier - Office,51480.0,39000.0,12480.0,FINANCE_RESTRICTED,True
+2026-01,Corporate software subscriptions,Corporate,Synthetic Supplier - Corporate,21450.0,23833.33,-2383.33,FINANCE_RESTRICTED,True
+2026-02,Corporate software subscriptions,Corporate,Synthetic Supplier - Corporate,21450.0,23833.33,-2383.33,FINANCE_RESTRICTED,True
+2026-03,Corporate software subscriptions,Corporate,Synthetic Supplier - Corporate,22880.0,23833.33,-953.33,FINANCE_RESTRICTED,True
+2026-04,Corporate software subscriptions,Corporate,Synthetic Supplier - Corporate,22880.0,23833.33,-953.33,FINANCE_RESTRICTED,True
+2026-05,Corporate software subscriptions,Corporate,Synthetic Supplier - Corporate,24310.0,23833.33,476.67,FINANCE_RESTRICTED,True
+2026-06,Corporate software subscriptions,Corporate,Synthetic Supplier - Corporate,24310.0,23833.33,476.67,FINANCE_RESTRICTED,True
+2026-07,Corporate software subscriptions,Corporate,Synthetic Supplier - Corporate,20020.0,23833.33,-3813.33,FINANCE_RESTRICTED,True
+2026-08,Corporate software subscriptions,Corporate,Synthetic Supplier - Corporate,18590.0,23833.33,-5243.33,FINANCE_RESTRICTED,True
+2026-09,Corporate software subscriptions,Corporate,Synthetic Supplier - Corporate,25740.0,23833.33,1906.67,FINANCE_RESTRICTED,True
+2026-10,Corporate software subscriptions,Corporate,Synthetic Supplier - Corporate,27170.0,23833.33,3336.67,FINANCE_RESTRICTED,True
+2026-11,Corporate software subscriptions,Corporate,Synthetic Supplier - Corporate,25740.0,23833.33,1906.67,FINANCE_RESTRICTED,True
+2026-12,Corporate software subscriptions,Corporate,Synthetic Supplier - Corporate,31460.0,23833.33,7626.67,FINANCE_RESTRICTED,True
+2026-01,Cloud infrastructure - internal,Corporate,Synthetic Supplier - Cloud,25650.0,28500.0,-2850.0,FINANCE_RESTRICTED,True
+2026-02,Cloud infrastructure - internal,Corporate,Synthetic Supplier - Cloud,25650.0,28500.0,-2850.0,FINANCE_RESTRICTED,True
+2026-03,Cloud infrastructure - internal,Corporate,Synthetic Supplier - Cloud,27360.0,28500.0,-1140.0,FINANCE_RESTRICTED,True
+2026-04,Cloud infrastructure - internal,Corporate,Synthetic Supplier - Cloud,27360.0,28500.0,-1140.0,FINANCE_RESTRICTED,True
+2026-05,Cloud infrastructure - internal,Corporate,Synthetic Supplier - Cloud,29070.0,28500.0,570.0,FINANCE_RESTRICTED,True
+2026-06,Cloud infrastructure - internal,Corporate,Synthetic Supplier - Cloud,29070.0,28500.0,570.0,FINANCE_RESTRICTED,True
+2026-07,Cloud infrastructure - internal,Corporate,Synthetic Supplier - Cloud,23940.0,28500.0,-4560.0,FINANCE_RESTRICTED,True
+2026-08,Cloud infrastructure - internal,Corporate,Synthetic Supplier - Cloud,22230.0,28500.0,-6270.0,FINANCE_RESTRICTED,True
+2026-09,Cloud infrastructure - internal,Corporate,Synthetic Supplier - Cloud,30780.0,28500.0,2280.0,FINANCE_RESTRICTED,True
+2026-10,Cloud infrastructure - internal,Corporate,Synthetic Supplier - Cloud,32490.0,28500.0,3990.0,FINANCE_RESTRICTED,True
+2026-11,Cloud infrastructure - internal,Corporate,Synthetic Supplier - Cloud,30780.0,28500.0,2280.0,FINANCE_RESTRICTED,True
+2026-12,Cloud infrastructure - internal,Corporate,Synthetic Supplier - Cloud,37620.0,28500.0,9120.0,FINANCE_RESTRICTED,True
+2026-01,Professional services and legal,Corporate,Synthetic Supplier - Professional,16350.0,18166.67,-1816.67,FINANCE_RESTRICTED,True
+2026-02,Professional services and legal,Corporate,Synthetic Supplier - Professional,16350.0,18166.67,-1816.67,FINANCE_RESTRICTED,True
+2026-03,Professional services and legal,Corporate,Synthetic Supplier - Professional,17440.0,18166.67,-726.67,FINANCE_RESTRICTED,True
+2026-04,Professional services and legal,Corporate,Synthetic Supplier - Professional,17440.0,18166.67,-726.67,FINANCE_RESTRICTED,True
+2026-05,Professional services and legal,Corporate,Synthetic Supplier - Professional,18530.0,18166.67,363.33,FINANCE_RESTRICTED,True
+2026-06,Professional services and legal,Corporate,Synthetic Supplier - Professional,18530.0,18166.67,363.33,FINANCE_RESTRICTED,True
+2026-07,Professional services and legal,Corporate,Synthetic Supplier - Professional,15260.0,18166.67,-2906.67,FINANCE_RESTRICTED,True
+2026-08,Professional services and legal,Corporate,Synthetic Supplier - Professional,14170.0,18166.67,-3996.67,FINANCE_RESTRICTED,True
+2026-09,Professional services and legal,Corporate,Synthetic Supplier - Professional,19620.0,18166.67,1453.33,FINANCE_RESTRICTED,True
+2026-10,Professional services and legal,Corporate,Synthetic Supplier - Professional,20710.0,18166.67,2543.33,FINANCE_RESTRICTED,True
+2026-11,Professional services and legal,Corporate,Synthetic Supplier - Professional,19620.0,18166.67,1453.33,FINANCE_RESTRICTED,True
+2026-12,Professional services and legal,Corporate,Synthetic Supplier - Professional,23980.0,18166.67,5813.33,FINANCE_RESTRICTED,True
+2026-01,Insurance and compliance,Corporate,Synthetic Supplier - Insurance,7200.0,8000.0,-800.0,FINANCE_RESTRICTED,True
+2026-02,Insurance and compliance,Corporate,Synthetic Supplier - Insurance,7200.0,8000.0,-800.0,FINANCE_RESTRICTED,True
+2026-03,Insurance and compliance,Corporate,Synthetic Supplier - Insurance,7680.0,8000.0,-320.0,FINANCE_RESTRICTED,True
+2026-04,Insurance and compliance,Corporate,Synthetic Supplier - Insurance,7680.0,8000.0,-320.0,FINANCE_RESTRICTED,True
+2026-05,Insurance and compliance,Corporate,Synthetic Supplier - Insurance,8160.0,8000.0,160.0,FINANCE_RESTRICTED,True
+2026-06,Insurance and compliance,Corporate,Synthetic Supplier - Insurance,8160.0,8000.0,160.0,FINANCE_RESTRICTED,True
+2026-07,Insurance and compliance,Corporate,Synthetic Supplier - Insurance,6720.0,8000.0,-1280.0,FINANCE_RESTRICTED,True
+2026-08,Insurance and compliance,Corporate,Synthetic Supplier - Insurance,6240.0,8000.0,-1760.0,FINANCE_RESTRICTED,True
+2026-09,Insurance and compliance,Corporate,Synthetic Supplier - Insurance,8640.0,8000.0,640.0,FINANCE_RESTRICTED,True
+2026-10,Insurance and compliance,Corporate,Synthetic Supplier - Insurance,9120.0,8000.0,1120.0,FINANCE_RESTRICTED,True
+2026-11,Insurance and compliance,Corporate,Synthetic Supplier - Insurance,8640.0,8000.0,640.0,FINANCE_RESTRICTED,True
+2026-12,Insurance and compliance,Corporate,Synthetic Supplier - Insurance,10560.0,8000.0,2560.0,FINANCE_RESTRICTED,True
+2026-01,Sales and marketing,Corporate,Synthetic Supplier - Sales,16050.0,17833.33,-1783.33,FINANCE_RESTRICTED,True
+2026-02,Sales and marketing,Corporate,Synthetic Supplier - Sales,16050.0,17833.33,-1783.33,FINANCE_RESTRICTED,True
+2026-03,Sales and marketing,Corporate,Synthetic Supplier - Sales,17120.0,17833.33,-713.33,FINANCE_RESTRICTED,True
+2026-04,Sales and marketing,Corporate,Synthetic Supplier - Sales,17120.0,17833.33,-713.33,FINANCE_RESTRICTED,True
+2026-05,Sales and marketing,Corporate,Synthetic Supplier - Sales,18190.0,17833.33,356.67,FINANCE_RESTRICTED,True
+2026-06,Sales and marketing,Corporate,Synthetic Supplier - Sales,18190.0,17833.33,356.67,FINANCE_RESTRICTED,True
+2026-07,Sales and marketing,Corporate,Synthetic Supplier - Sales,14980.0,17833.33,-2853.33,FINANCE_RESTRICTED,True
+2026-08,Sales and marketing,Corporate,Synthetic Supplier - Sales,13910.0,17833.33,-3923.33,FINANCE_RESTRICTED,True
+2026-09,Sales and marketing,Corporate,Synthetic Supplier - Sales,19260.0,17833.33,1426.67,FINANCE_RESTRICTED,True
+2026-10,Sales and marketing,Corporate,Synthetic Supplier - Sales,20330.0,17833.33,2496.67,FINANCE_RESTRICTED,True
+2026-11,Sales and marketing,Corporate,Synthetic Supplier - Sales,19260.0,17833.33,1426.67,FINANCE_RESTRICTED,True
+2026-12,Sales and marketing,Corporate,Synthetic Supplier - Sales,23540.0,17833.33,5706.67,FINANCE_RESTRICTED,True
+2026-01,Training and certification,Corporate,Synthetic Supplier - Training,6300.0,10500.0,-4200.0,FINANCE_RESTRICTED,True
+2026-02,Training and certification,Corporate,Synthetic Supplier - Training,7560.0,10500.0,-2940.0,FINANCE_RESTRICTED,True
+2026-03,Training and certification,Corporate,Synthetic Supplier - Training,12600.0,10500.0,2100.0,FINANCE_RESTRICTED,True
+2026-04,Training and certification,Corporate,Synthetic Supplier - Training,13860.0,10500.0,3360.0,FINANCE_RESTRICTED,True
+2026-05,Training and certification,Corporate,Synthetic Supplier - Training,12600.0,10500.0,2100.0,FINANCE_RESTRICTED,True
+2026-06,Training and certification,Corporate,Synthetic Supplier - Training,10080.0,10500.0,-420.0,FINANCE_RESTRICTED,True
+2026-07,Training and certification,Corporate,Synthetic Supplier - Training,5040.0,10500.0,-5460.0,FINANCE_RESTRICTED,True
+2026-08,Training and certification,Corporate,Synthetic Supplier - Training,3780.0,10500.0,-6720.0,FINANCE_RESTRICTED,True
+2026-09,Training and certification,Corporate,Synthetic Supplier - Training,17640.0,10500.0,7140.0,FINANCE_RESTRICTED,True
+2026-10,Training and certification,Corporate,Synthetic Supplier - Training,13860.0,10500.0,3360.0,FINANCE_RESTRICTED,True
+2026-11,Training and certification,Corporate,Synthetic Supplier - Training,12600.0,10500.0,2100.0,FINANCE_RESTRICTED,True
+2026-12,Training and certification,Corporate,Synthetic Supplier - Training,10080.0,10500.0,-420.0,FINANCE_RESTRICTED,True
+2026-01,Recruitment fees,Corporate,Synthetic Supplier - Recruitment,4700.0,7833.33,-3133.33,FINANCE_RESTRICTED,True
+2026-02,Recruitment fees,Corporate,Synthetic Supplier - Recruitment,5640.0,7833.33,-2193.33,FINANCE_RESTRICTED,True
+2026-03,Recruitment fees,Corporate,Synthetic Supplier - Recruitment,9400.0,7833.33,1566.67,FINANCE_RESTRICTED,True
+2026-04,Recruitment fees,Corporate,Synthetic Supplier - Recruitment,10340.0,7833.33,2506.67,FINANCE_RESTRICTED,True
+2026-05,Recruitment fees,Corporate,Synthetic Supplier - Recruitment,9400.0,7833.33,1566.67,FINANCE_RESTRICTED,True
+2026-06,Recruitment fees,Corporate,Synthetic Supplier - Recruitment,7520.0,7833.33,-313.33,FINANCE_RESTRICTED,True
+2026-07,Recruitment fees,Corporate,Synthetic Supplier - Recruitment,3760.0,7833.33,-4073.33,FINANCE_RESTRICTED,True
+2026-08,Recruitment fees,Corporate,Synthetic Supplier - Recruitment,2820.0,7833.33,-5013.33,FINANCE_RESTRICTED,True
+2026-09,Recruitment fees,Corporate,Synthetic Supplier - Recruitment,13160.0,7833.33,5326.67,FINANCE_RESTRICTED,True
+2026-10,Recruitment fees,Corporate,Synthetic Supplier - Recruitment,10340.0,7833.33,2506.67,FINANCE_RESTRICTED,True
+2026-11,Recruitment fees,Corporate,Synthetic Supplier - Recruitment,9400.0,7833.33,1566.67,FINANCE_RESTRICTED,True
+2026-12,Recruitment fees,Corporate,Synthetic Supplier - Recruitment,7520.0,7833.33,-313.33,FINANCE_RESTRICTED,True
+2026-01,Travel - internal,Corporate,Synthetic Supplier - Travel,11100.0,12333.33,-1233.33,FINANCE_RESTRICTED,True
+2026-02,Travel - internal,Corporate,Synthetic Supplier - Travel,11100.0,12333.33,-1233.33,FINANCE_RESTRICTED,True
+2026-03,Travel - internal,Corporate,Synthetic Supplier - Travel,11840.0,12333.33,-493.33,FINANCE_RESTRICTED,True
+2026-04,Travel - internal,Corporate,Synthetic Supplier - Travel,11840.0,12333.33,-493.33,FINANCE_RESTRICTED,True
+2026-05,Travel - internal,Corporate,Synthetic Supplier - Travel,12580.0,12333.33,246.67,FINANCE_RESTRICTED,True
+2026-06,Travel - internal,Corporate,Synthetic Supplier - Travel,12580.0,12333.33,246.67,FINANCE_RESTRICTED,True
+2026-07,Travel - internal,Corporate,Synthetic Supplier - Travel,10360.0,12333.33,-1973.33,FINANCE_RESTRICTED,True
+2026-08,Travel - internal,Corporate,Synthetic Supplier - Travel,9620.0,12333.33,-2713.33,FINANCE_RESTRICTED,True
+2026-09,Travel - internal,Corporate,Synthetic Supplier - Travel,13320.0,12333.33,986.67,FINANCE_RESTRICTED,True
+2026-10,Travel - internal,Corporate,Synthetic Supplier - Travel,14060.0,12333.33,1726.67,FINANCE_RESTRICTED,True
+2026-11,Travel - internal,Corporate,Synthetic Supplier - Travel,13320.0,12333.33,986.67,FINANCE_RESTRICTED,True
+2026-12,Travel - internal,Corporate,Synthetic Supplier - Travel,16280.0,12333.33,3946.67,FINANCE_RESTRICTED,True
+2026-01,IT equipment and support,Corporate,Synthetic Supplier - IT,13200.0,14666.67,-1466.67,FINANCE_RESTRICTED,True
+2026-02,IT equipment and support,Corporate,Synthetic Supplier - IT,13200.0,14666.67,-1466.67,FINANCE_RESTRICTED,True
+2026-03,IT equipment and support,Corporate,Synthetic Supplier - IT,14080.0,14666.67,-586.67,FINANCE_RESTRICTED,True
+2026-04,IT equipment and support,Corporate,Synthetic Supplier - IT,14080.0,14666.67,-586.67,FINANCE_RESTRICTED,True
+2026-05,IT equipment and support,Corporate,Synthetic Supplier - IT,14960.0,14666.67,293.33,FINANCE_RESTRICTED,True
+2026-06,IT equipment and support,Corporate,Synthetic Supplier - IT,14960.0,14666.67,293.33,FINANCE_RESTRICTED,True
+2026-07,IT equipment and support,Corporate,Synthetic Supplier - IT,12320.0,14666.67,-2346.67,FINANCE_RESTRICTED,True
+2026-08,IT equipment and support,Corporate,Synthetic Supplier - IT,11440.0,14666.67,-3226.67,FINANCE_RESTRICTED,True
+2026-09,IT equipment and support,Corporate,Synthetic Supplier - IT,15840.0,14666.67,1173.33,FINANCE_RESTRICTED,True
+2026-10,IT equipment and support,Corporate,Synthetic Supplier - IT,16720.0,14666.67,2053.33,FINANCE_RESTRICTED,True
+2026-11,IT equipment and support,Corporate,Synthetic Supplier - IT,15840.0,14666.67,1173.33,FINANCE_RESTRICTED,True
+2026-12,IT equipment and support,Corporate,Synthetic Supplier - IT,19360.0,14666.67,4693.33,FINANCE_RESTRICTED,True
+2026-01,Telecommunications,Corporate,Synthetic Supplier - Telecommunications,5400.0,6000.0,-600.0,FINANCE_RESTRICTED,True
+2026-02,Telecommunications,Corporate,Synthetic Supplier - Telecommunications,5400.0,6000.0,-600.0,FINANCE_RESTRICTED,True
+2026-03,Telecommunications,Corporate,Synthetic Supplier - Telecommunications,5760.0,6000.0,-240.0,FINANCE_RESTRICTED,True
+2026-04,Telecommunications,Corporate,Synthetic Supplier - Telecommunications,5760.0,6000.0,-240.0,FINANCE_RESTRICTED,True
+2026-05,Telecommunications,Corporate,Synthetic Supplier - Telecommunications,6120.0,6000.0,120.0,FINANCE_RESTRICTED,True
+2026-06,Telecommunications,Corporate,Synthetic Supplier - Telecommunications,6120.0,6000.0,120.0,FINANCE_RESTRICTED,True
+2026-07,Telecommunications,Corporate,Synthetic Supplier - Telecommunications,5040.0,6000.0,-960.0,FINANCE_RESTRICTED,True
+2026-08,Telecommunications,Corporate,Synthetic Supplier - Telecommunications,4680.0,6000.0,-1320.0,FINANCE_RESTRICTED,True
+2026-09,Telecommunications,Corporate,Synthetic Supplier - Telecommunications,6480.0,6000.0,480.0,FINANCE_RESTRICTED,True
+2026-10,Telecommunications,Corporate,Synthetic Supplier - Telecommunications,6840.0,6000.0,840.0,FINANCE_RESTRICTED,True
+2026-11,Telecommunications,Corporate,Synthetic Supplier - Telecommunications,6480.0,6000.0,480.0,FINANCE_RESTRICTED,True
+2026-12,Telecommunications,Corporate,Synthetic Supplier - Telecommunications,7920.0,6000.0,1920.0,FINANCE_RESTRICTED,True
+2026-01,Depreciation,Corporate,Synthetic Supplier - Depreciation,10350.0,11500.0,-1150.0,FINANCE_RESTRICTED,True
+2026-02,Depreciation,Corporate,Synthetic Supplier - Depreciation,10350.0,11500.0,-1150.0,FINANCE_RESTRICTED,True
+2026-03,Depreciation,Corporate,Synthetic Supplier - Depreciation,11040.0,11500.0,-460.0,FINANCE_RESTRICTED,True
+2026-04,Depreciation,Corporate,Synthetic Supplier - Depreciation,11040.0,11500.0,-460.0,FINANCE_RESTRICTED,True
+2026-05,Depreciation,Corporate,Synthetic Supplier - Depreciation,11730.0,11500.0,230.0,FINANCE_RESTRICTED,True
+2026-06,Depreciation,Corporate,Synthetic Supplier - Depreciation,11730.0,11500.0,230.0,FINANCE_RESTRICTED,True
+2026-07,Depreciation,Corporate,Synthetic Supplier - Depreciation,9660.0,11500.0,-1840.0,FINANCE_RESTRICTED,True
+2026-08,Depreciation,Corporate,Synthetic Supplier - Depreciation,8970.0,11500.0,-2530.0,FINANCE_RESTRICTED,True
+2026-09,Depreciation,Corporate,Synthetic Supplier - Depreciation,12420.0,11500.0,920.0,FINANCE_RESTRICTED,True
+2026-10,Depreciation,Corporate,Synthetic Supplier - Depreciation,13110.0,11500.0,1610.0,FINANCE_RESTRICTED,True
+2026-11,Depreciation,Corporate,Synthetic Supplier - Depreciation,12420.0,11500.0,920.0,FINANCE_RESTRICTED,True
+2026-12,Depreciation,Corporate,Synthetic Supplier - Depreciation,15180.0,11500.0,3680.0,FINANCE_RESTRICTED,True
+2026-01,Bad debt provision,Corporate,Synthetic Supplier - Bad,6150.0,6833.33,-683.33,FINANCE_RESTRICTED,True
+2026-02,Bad debt provision,Corporate,Synthetic Supplier - Bad,6150.0,6833.33,-683.33,FINANCE_RESTRICTED,True
+2026-03,Bad debt provision,Corporate,Synthetic Supplier - Bad,6560.0,6833.33,-273.33,FINANCE_RESTRICTED,True
+2026-04,Bad debt provision,Corporate,Synthetic Supplier - Bad,6560.0,6833.33,-273.33,FINANCE_RESTRICTED,True
+2026-05,Bad debt provision,Corporate,Synthetic Supplier - Bad,6970.0,6833.33,136.67,FINANCE_RESTRICTED,True
+2026-06,Bad debt provision,Corporate,Synthetic Supplier - Bad,6970.0,6833.33,136.67,FINANCE_RESTRICTED,True
+2026-07,Bad debt provision,Corporate,Synthetic Supplier - Bad,5740.0,6833.33,-1093.33,FINANCE_RESTRICTED,True
+2026-08,Bad debt provision,Corporate,Synthetic Supplier - Bad,5330.0,6833.33,-1503.33,FINANCE_RESTRICTED,True
+2026-09,Bad debt provision,Corporate,Synthetic Supplier - Bad,7380.0,6833.33,546.67,FINANCE_RESTRICTED,True
+2026-10,Bad debt provision,Corporate,Synthetic Supplier - Bad,7790.0,6833.33,956.67,FINANCE_RESTRICTED,True
+2026-11,Bad debt provision,Corporate,Synthetic Supplier - Bad,7380.0,6833.33,546.67,FINANCE_RESTRICTED,True
+2026-12,Bad debt provision,Corporate,Synthetic Supplier - Bad,9020.0,6833.33,2186.67,FINANCE_RESTRICTED,True
+2026-01,Miscellaneous administration,Corporate,Synthetic Supplier - Miscellaneous,4800.0,5333.33,-533.33,FINANCE_RESTRICTED,True
+2026-02,Miscellaneous administration,Corporate,Synthetic Supplier - Miscellaneous,4800.0,5333.33,-533.33,FINANCE_RESTRICTED,True
+2026-03,Miscellaneous administration,Corporate,Synthetic Supplier - Miscellaneous,5120.0,5333.33,-213.33,FINANCE_RESTRICTED,True
+2026-04,Miscellaneous administration,Corporate,Synthetic Supplier - Miscellaneous,5120.0,5333.33,-213.33,FINANCE_RESTRICTED,True
+2026-05,Miscellaneous administration,Corporate,Synthetic Supplier - Miscellaneous,5440.0,5333.33,106.67,FINANCE_RESTRICTED,True
+2026-06,Miscellaneous administration,Corporate,Synthetic Supplier - Miscellaneous,5440.0,5333.33,106.67,FINANCE_RESTRICTED,True
+2026-07,Miscellaneous administration,Corporate,Synthetic Supplier - Miscellaneous,4480.0,5333.33,-853.33,FINANCE_RESTRICTED,True
+2026-08,Miscellaneous administration,Corporate,Synthetic Supplier - Miscellaneous,4160.0,5333.33,-1173.33,FINANCE_RESTRICTED,True
+2026-09,Miscellaneous administration,Corporate,Synthetic Supplier - Miscellaneous,5760.0,5333.33,426.67,FINANCE_RESTRICTED,True
+2026-10,Miscellaneous administration,Corporate,Synthetic Supplier - Miscellaneous,6080.0,5333.33,746.67,FINANCE_RESTRICTED,True
+2026-11,Miscellaneous administration,Corporate,Synthetic Supplier - Miscellaneous,5760.0,5333.33,426.67,FINANCE_RESTRICTED,True
+2026-12,Miscellaneous administration,Corporate,Synthetic Supplier - Miscellaneous,7040.0,5333.33,1706.67,FINANCE_RESTRICTED,True

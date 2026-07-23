@@ -1,0 +1,13 @@
+client_name,project_id,total_billed_2026_eur,cash_collected_2026_eur,outstanding_receivable_eur,current_not_due_eur,overdue_1_30_days_eur,overdue_31_60_days_eur,overdue_61_plus_days_eur,credit_risk_rating,collection_action,classification,synthetic_record
+Synthetic Client A S.A.,P001,867970.01,616920.94,251049.07,91769.7,60762.79,70814.9,27701.68,Low,Standard follow-up,FINANCE_RESTRICTED,True
+Synthetic Client B S.A.,P002,865955.99,634212.2,231743.79,135969.84,46725.55,33325.87,15722.53,Low,Standard follow-up,FINANCE_RESTRICTED,True
+Synthetic Client C S.A.,P003,809600.0,579068.38,230531.62,113070.17,42962.08,50288.72,24210.65,Low,Standard follow-up,FINANCE_RESTRICTED,True
+Synthetic Client D S.A.,P004,650328.0,506699.19,143628.81,58128.66,48746.15,18199.97,18554.03,Low,Standard follow-up,FINANCE_RESTRICTED,True
+Synthetic Client E S.A.,P005,605172.0,535892.52,69279.48,28588.32,15190.37,12082.69,13418.1,Low,Standard follow-up,FINANCE_RESTRICTED,True
+Synthetic Client F S.A.,P006,548795.99,429205.89,119590.1,63521.9,32720.73,12172.73,11174.74,Low,Standard follow-up,FINANCE_RESTRICTED,True
+Synthetic Client G S.A.,P007,650256.0,496189.17,154066.83,54749.32,49263.46,30170.31,19883.74,Low,Standard follow-up,FINANCE_RESTRICTED,True
+Synthetic Client H S.A.,P008,466715.99,409853.79,56862.2,33371.53,13499.29,7313.87,2677.51,Low,Standard follow-up,FINANCE_RESTRICTED,True
+Synthetic Client I S.A.,P009,575909.99,478005.68,97904.31,36543.77,31687.31,21685.69,7987.54,Low,Standard follow-up,FINANCE_RESTRICTED,True
+Synthetic Client J S.A.,P010,350811.0,272859.86,77951.14,31727.96,23049.13,17058.43,6115.62,Low,Standard follow-up,FINANCE_RESTRICTED,True
+Synthetic Client K S.A.,P011,861695.99,812502.15,49193.84,17354.24,14722.63,9775.82,7341.15,Low,Standard follow-up,FINANCE_RESTRICTED,True
+Synthetic Client L S.A.,P012,606816.01,443760.91,163055.1,71208.57,41244.82,35158.05,15443.66,Low,Standard follow-up,FINANCE_RESTRICTED,True

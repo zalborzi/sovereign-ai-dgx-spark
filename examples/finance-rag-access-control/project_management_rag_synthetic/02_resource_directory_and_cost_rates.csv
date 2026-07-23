@@ -1,0 +1,51 @@
+employee_id,employee_name,department,job_title,employment_type,fte,location,standard_hourly_project_cost_rate_eur,target_client_utilization_pct,resource_category,classification,privacy_note,synthetic_record
+E001,Sophie Lambert,Finance,Finance Director,Permanent,1.0,Luxembourg,97.5,10,Corporate,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E002,Marc Hoffmann,Finance,Senior Financial Controller,Permanent,1.0,Luxembourg,80.0,10,Corporate,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E003,Elena Rossi,Finance,Management Accountant,Permanent,1.0,Luxembourg,62.5,10,Corporate,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E004,Thomas Weber,Finance,Payroll & Benefits Specialist,Permanent,1.0,Luxembourg,57.5,10,Corporate,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E005,Nadia Benali,Finance,Financial Analyst,Permanent,1.0,Luxembourg,55.0,10,Corporate,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E006,Jean Schmit,Executive,Chief Executive Officer,Permanent,1.0,Luxembourg,187.5,10,Corporate,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E007,Claire Muller,Executive,Chief Financial Officer,Permanent,1.0,Luxembourg,157.5,10,Corporate,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E008,Luca Conti,Executive,Chief Technology Officer,Permanent,1.0,Luxembourg,162.5,10,Corporate,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E009,Amélie Dubois,Executive,Chief Operating Officer,Permanent,1.0,Luxembourg,150.0,10,Corporate,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E010,David Martin,Project Management,PMO Director,Permanent,1.0,Luxembourg,105.0,68,Project Manager,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E011,Maya Fernandes,Project Management,Senior Project Manager,Permanent,1.0,Luxembourg,85.0,68,Project Manager,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E012,Julien Bernard,Project Management,Senior Project Manager,Permanent,1.0,Luxembourg,82.5,68,Project Manager,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E013,Sara Khan,Project Management,Project Manager,Permanent,1.0,Luxembourg,67.5,68,Project Manager,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E014,Nicolas Wagner,Project Management,Project Manager,Permanent,1.0,Luxembourg,67.5,68,Project Manager,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E015,Inès Petit,Project Management,PMO Analyst,Permanent,1.0,Luxembourg,55.0,68,Project Manager,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E016,Olivier Lefevre,Project Management,Resource Manager,Permanent,1.0,Luxembourg,65.0,68,Project Manager,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E017,Amina Amar,Data & AI,Principal Data & AI Architect,Permanent,1.0,Luxembourg,120.0,78,Delivery,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E018,Gabriel Simon,Data & AI,Senior Data Architect,Permanent,1.0,Luxembourg,100.0,78,Delivery,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E019,Eva Moreau,Data & AI,Senior AI Engineer,Permanent,1.0,Luxembourg,100.0,78,Delivery,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E020,Antoine Robert,Data & AI,Data Engineer,Permanent,1.0,Luxembourg,75.0,78,Delivery,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E021,Lea Nguyen,Data & AI,ML Engineer,Permanent,1.0,Luxembourg,67.5,78,Delivery,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E022,Hugo Laurent,Data & AI,Data Scientist,Permanent,1.0,Luxembourg,67.5,78,Delivery,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E023,Mila Costa,Cloud & Platform,Cloud Architect,Permanent,1.0,Luxembourg,102.5,78,Delivery,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E024,Louis Fontaine,Cloud & Platform,DevOps Engineer,Permanent,1.0,Luxembourg,77.5,78,Delivery,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E025,Camille Garcia,Cloud & Platform,Platform Engineer,Permanent,1.0,Luxembourg,65.0,78,Delivery,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E026,Noah Durand,Cybersecurity,Security Architect,Permanent,1.0,Luxembourg,117.5,78,Delivery,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E027,Emma Lopez,Cybersecurity,Security Engineer,Permanent,1.0,Luxembourg,82.5,78,Delivery,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E028,Arthur Mercier,Consulting,Senior Business Consultant,Permanent,1.0,Luxembourg,95.0,78,Delivery,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E029,Chloé Diallo,Consulting,Business Consultant,Permanent,1.0,Luxembourg,60.0,78,Delivery,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E030,Rayan Fischer,Applications,Senior Software Engineer,Permanent,1.0,Luxembourg,90.0,78,Delivery,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E031,Lucie Pereira,Applications,Software Engineer,Permanent,1.0,Luxembourg,62.5,78,Delivery,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E032,Maxime Richard,Applications,QA Engineer,Permanent,1.0,Luxembourg,62.5,78,Delivery,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E033,Aya Bauer,Sales,Account Director,Permanent,1.0,Luxembourg,105.0,20,Commercial,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E034,Victor Renard,Sales,Account Manager,Permanent,1.0,Luxembourg,72.5,20,Commercial,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E035,Alice Meier,HR,HR Business Partner,Permanent,1.0,Luxembourg,65.0,10,Corporate,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E036,Nathan Cohen,HR,Talent Acquisition Specialist,Permanent,1.0,Luxembourg,55.0,10,Corporate,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E037,Lina Gomes,Operations,Office & Operations Manager,Permanent,1.0,Luxembourg,67.5,10,Corporate,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E038,Paul Lemoine,Data & AI,Principal Data & AI Architect,Permanent,1.0,Luxembourg,120.0,78,Delivery,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E039,Jade Santos,Data & AI,Senior Data Architect,Permanent,1.0,Luxembourg,100.0,78,Delivery,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E040,Adam Klein,Data & AI,Senior AI Engineer,Permanent,1.0,Luxembourg,90.0,78,Delivery,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E041,Zoé Marques,Data & AI,Data Engineer,Permanent,1.0,Luxembourg,67.5,78,Delivery,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E042,Samuel Jung,Data & AI,ML Engineer,Permanent,1.0,Luxembourg,75.0,78,Delivery,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E043,Manon Franco,Data & AI,Data Scientist,Permanent,1.0,Luxembourg,75.0,78,Delivery,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E044,Yanis Vidal,Cloud & Platform,Cloud Architect,Permanent,1.0,Luxembourg,97.5,78,Delivery,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E045,Louise Carvalho,Cloud & Platform,DevOps Engineer,Permanent,1.0,Luxembourg,75.0,78,Delivery,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E046,Alexandre Blanc,Cloud & Platform,Platform Engineer,Permanent,1.0,Luxembourg,67.5,78,Delivery,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E047,Mia Nowak,Cybersecurity,Security Architect,Permanent,1.0,Luxembourg,115.0,78,Delivery,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E048,Raphaël Meyer,Cybersecurity,Security Engineer,Permanent,1.0,Luxembourg,87.5,78,Delivery,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E049,Nora Aydin,Consulting,Senior Business Consultant,Permanent,1.0,Luxembourg,90.0,78,Delivery,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True
+E050,Mathis Girard,Consulting,Business Consultant,Permanent,1.0,Luxembourg,60.0,78,Delivery,PROJECT_MANAGEMENT_RESTRICTED,Project costing rate only; no salary information included.,True

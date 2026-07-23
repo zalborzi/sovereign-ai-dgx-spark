@@ -1,0 +1,145 @@
+month,project_id,project_name,client_name,revenue_type,recognized_revenue_eur,billed_revenue_eur,unbilled_revenue_eur,currency,classification,synthetic_record
+2026-01,P001,LuxHealth Data Platform,Synthetic Client A S.A.,Professional Services,40731.21,29733.79,10997.43,EUR,FINANCE_RESTRICTED,True
+2026-02,P001,LuxHealth Data Platform,Synthetic Client A S.A.,Professional Services,52917.31,38629.64,14287.67,EUR,FINANCE_RESTRICTED,True
+2026-03,P001,LuxHealth Data Platform,Synthetic Client A S.A.,Professional Services,81785.58,59703.47,22082.11,EUR,FINANCE_RESTRICTED,True
+2026-04,P001,LuxHealth Data Platform,Synthetic Client A S.A.,Professional Services,109508.98,79941.55,29567.42,EUR,FINANCE_RESTRICTED,True
+2026-05,P001,LuxHealth Data Platform,Synthetic Client A S.A.,Professional Services,108911.36,79505.29,29406.07,EUR,FINANCE_RESTRICTED,True
+2026-06,P001,LuxHealth Data Platform,Synthetic Client A S.A.,Professional Services,131202.42,95777.77,35424.65,EUR,FINANCE_RESTRICTED,True
+2026-07,P001,LuxHealth Data Platform,Synthetic Client A S.A.,Professional Services,121944.0,89019.12,32924.88,EUR,FINANCE_RESTRICTED,True
+2026-08,P001,LuxHealth Data Platform,Synthetic Client A S.A.,Professional Services,97674.22,71302.18,26372.04,EUR,FINANCE_RESTRICTED,True
+2026-09,P001,LuxHealth Data Platform,Synthetic Client A S.A.,Professional Services,114475.05,83566.79,30908.26,EUR,FINANCE_RESTRICTED,True
+2026-10,P001,LuxHealth Data Platform,Synthetic Client A S.A.,Professional Services,128679.37,93935.94,34743.43,EUR,FINANCE_RESTRICTED,True
+2026-11,P001,LuxHealth Data Platform,Synthetic Client A S.A.,Professional Services,91510.51,66802.67,24707.84,EUR,FINANCE_RESTRICTED,True
+2026-12,P001,LuxHealth Data Platform,Synthetic Client A S.A.,Professional Services,109660.0,80051.8,29608.2,EUR,FINANCE_RESTRICTED,True
+2026-01,P002,Sovereign AI Factory,Synthetic Client B S.A.,Professional Services,37715.34,29417.97,8297.37,EUR,FINANCE_RESTRICTED,True
+2026-02,P002,Sovereign AI Factory,Synthetic Client B S.A.,Professional Services,58087.75,45308.44,12779.3,EUR,FINANCE_RESTRICTED,True
+2026-03,P002,Sovereign AI Factory,Synthetic Client B S.A.,Professional Services,87706.65,68411.19,19295.46,EUR,FINANCE_RESTRICTED,True
+2026-04,P002,Sovereign AI Factory,Synthetic Client B S.A.,Professional Services,94886.09,74011.15,20874.94,EUR,FINANCE_RESTRICTED,True
+2026-05,P002,Sovereign AI Factory,Synthetic Client B S.A.,Professional Services,116656.48,90992.05,25664.42,EUR,FINANCE_RESTRICTED,True
+2026-06,P002,Sovereign AI Factory,Synthetic Client B S.A.,Professional Services,127977.19,99822.21,28154.98,EUR,FINANCE_RESTRICTED,True
+2026-07,P002,Sovereign AI Factory,Synthetic Client B S.A.,Professional Services,94269.99,73530.59,20739.4,EUR,FINANCE_RESTRICTED,True
+2026-08,P002,Sovereign AI Factory,Synthetic Client B S.A.,Professional Services,73632.58,57433.41,16199.17,EUR,FINANCE_RESTRICTED,True
+2026-09,P002,Sovereign AI Factory,Synthetic Client B S.A.,Professional Services,101461.67,79140.1,22321.57,EUR,FINANCE_RESTRICTED,True
+2026-10,P002,Sovereign AI Factory,Synthetic Client B S.A.,Professional Services,129627.78,101109.67,28518.11,EUR,FINANCE_RESTRICTED,True
+2026-11,P002,Sovereign AI Factory,Synthetic Client B S.A.,Professional Services,85704.16,66849.25,18854.92,EUR,FINANCE_RESTRICTED,True
+2026-12,P002,Sovereign AI Factory,Synthetic Client B S.A.,Professional Services,102474.31,79929.96,22544.35,EUR,FINANCE_RESTRICTED,True
+2026-01,P003,Core Banking Modernisation,Synthetic Client C S.A.,Professional Services,31304.61,25043.69,6260.92,EUR,FINANCE_RESTRICTED,True
+2026-02,P003,Core Banking Modernisation,Synthetic Client C S.A.,Professional Services,50186.78,40149.42,10037.36,EUR,FINANCE_RESTRICTED,True
+2026-03,P003,Core Banking Modernisation,Synthetic Client C S.A.,Professional Services,54962.35,43969.88,10992.47,EUR,FINANCE_RESTRICTED,True
+2026-04,P003,Core Banking Modernisation,Synthetic Client C S.A.,Professional Services,91126.58,72901.26,18225.32,EUR,FINANCE_RESTRICTED,True
+2026-05,P003,Core Banking Modernisation,Synthetic Client C S.A.,Professional Services,89154.07,71323.26,17830.81,EUR,FINANCE_RESTRICTED,True
+2026-06,P003,Core Banking Modernisation,Synthetic Client C S.A.,Professional Services,114402.83,91522.26,22880.57,EUR,FINANCE_RESTRICTED,True
+2026-07,P003,Core Banking Modernisation,Synthetic Client C S.A.,Professional Services,106927.02,85541.62,21385.4,EUR,FINANCE_RESTRICTED,True
+2026-08,P003,Core Banking Modernisation,Synthetic Client C S.A.,Professional Services,85433.96,68347.17,17086.79,EUR,FINANCE_RESTRICTED,True
+2026-09,P003,Core Banking Modernisation,Synthetic Client C S.A.,Professional Services,112852.11,90281.69,22570.42,EUR,FINANCE_RESTRICTED,True
+2026-10,P003,Core Banking Modernisation,Synthetic Client C S.A.,Professional Services,110772.83,88618.27,22154.57,EUR,FINANCE_RESTRICTED,True
+2026-11,P003,Core Banking Modernisation,Synthetic Client C S.A.,Professional Services,101650.84,81320.67,20330.17,EUR,FINANCE_RESTRICTED,True
+2026-12,P003,Core Banking Modernisation,Synthetic Client C S.A.,Professional Services,63226.02,50580.81,12645.2,EUR,FINANCE_RESTRICTED,True
+2026-01,P004,Smart Mobility Analytics,Synthetic Client D S.A.,Professional Services,28487.82,23929.76,4558.05,EUR,FINANCE_RESTRICTED,True
+2026-02,P004,Smart Mobility Analytics,Synthetic Client D S.A.,Professional Services,38362.93,32224.86,6138.07,EUR,FINANCE_RESTRICTED,True
+2026-03,P004,Smart Mobility Analytics,Synthetic Client D S.A.,Professional Services,55127.11,46306.77,8820.34,EUR,FINANCE_RESTRICTED,True
+2026-04,P004,Smart Mobility Analytics,Synthetic Client D S.A.,Professional Services,72418.62,60831.64,11586.98,EUR,FINANCE_RESTRICTED,True
+2026-05,P004,Smart Mobility Analytics,Synthetic Client D S.A.,Professional Services,58453.14,49100.64,9352.5,EUR,FINANCE_RESTRICTED,True
+2026-06,P004,Smart Mobility Analytics,Synthetic Client D S.A.,Professional Services,67509.68,56708.13,10801.55,EUR,FINANCE_RESTRICTED,True
+2026-07,P004,Smart Mobility Analytics,Synthetic Client D S.A.,Professional Services,81607.52,68550.32,13057.2,EUR,FINANCE_RESTRICTED,True
+2026-08,P004,Smart Mobility Analytics,Synthetic Client D S.A.,Professional Services,68691.35,57700.74,10990.62,EUR,FINANCE_RESTRICTED,True
+2026-09,P004,Smart Mobility Analytics,Synthetic Client D S.A.,Professional Services,81337.49,68323.49,13014.0,EUR,FINANCE_RESTRICTED,True
+2026-10,P004,Smart Mobility Analytics,Synthetic Client D S.A.,Professional Services,86697.57,72825.96,13871.61,EUR,FINANCE_RESTRICTED,True
+2026-11,P004,Smart Mobility Analytics,Synthetic Client D S.A.,Professional Services,71993.24,60474.32,11518.92,EUR,FINANCE_RESTRICTED,True
+2026-12,P004,Smart Mobility Analytics,Synthetic Client D S.A.,Professional Services,63513.53,53351.37,10162.16,EUR,FINANCE_RESTRICTED,True
+2026-01,P005,Cloud Landing Zone,Synthetic Client E S.A.,Professional Services,39197.86,29006.42,10191.44,EUR,FINANCE_RESTRICTED,True
+2026-02,P005,Cloud Landing Zone,Synthetic Client E S.A.,Professional Services,43347.99,32077.51,11270.48,EUR,FINANCE_RESTRICTED,True
+2026-03,P005,Cloud Landing Zone,Synthetic Client E S.A.,Professional Services,54015.06,39971.14,14043.91,EUR,FINANCE_RESTRICTED,True
+2026-04,P005,Cloud Landing Zone,Synthetic Client E S.A.,Professional Services,59333.51,43906.8,15426.71,EUR,FINANCE_RESTRICTED,True
+2026-05,P005,Cloud Landing Zone,Synthetic Client E S.A.,Professional Services,66686.3,49347.86,17338.44,EUR,FINANCE_RESTRICTED,True
+2026-06,P005,Cloud Landing Zone,Synthetic Client E S.A.,Professional Services,68632.64,50788.15,17844.49,EUR,FINANCE_RESTRICTED,True
+2026-07,P005,Cloud Landing Zone,Synthetic Client E S.A.,Professional Services,80142.8,59305.67,20837.13,EUR,FINANCE_RESTRICTED,True
+2026-08,P005,Cloud Landing Zone,Synthetic Client E S.A.,Professional Services,72741.86,53828.98,18912.88,EUR,FINANCE_RESTRICTED,True
+2026-09,P005,Cloud Landing Zone,Synthetic Client E S.A.,Professional Services,104967.38,77675.86,27291.52,EUR,FINANCE_RESTRICTED,True
+2026-10,P005,Cloud Landing Zone,Synthetic Client E S.A.,Professional Services,83705.12,61941.79,21763.33,EUR,FINANCE_RESTRICTED,True
+2026-11,P005,Cloud Landing Zone,Synthetic Client E S.A.,Professional Services,75090.1,55566.68,19523.43,EUR,FINANCE_RESTRICTED,True
+2026-12,P005,Cloud Landing Zone,Synthetic Client E S.A.,Professional Services,69939.38,51755.14,18184.24,EUR,FINANCE_RESTRICTED,True
+2026-01,P006,AML Data Quality,Synthetic Client F S.A.,Professional Services,30626.01,25419.59,5206.42,EUR,FINANCE_RESTRICTED,True
+2026-02,P006,AML Data Quality,Synthetic Client F S.A.,Professional Services,30078.82,24965.42,5113.4,EUR,FINANCE_RESTRICTED,True
+2026-03,P006,AML Data Quality,Synthetic Client F S.A.,Professional Services,46489.1,38585.95,7903.15,EUR,FINANCE_RESTRICTED,True
+2026-04,P006,AML Data Quality,Synthetic Client F S.A.,Professional Services,49880.55,41400.86,8479.69,EUR,FINANCE_RESTRICTED,True
+2026-05,P006,AML Data Quality,Synthetic Client F S.A.,Professional Services,65774.9,54593.17,11181.73,EUR,FINANCE_RESTRICTED,True
+2026-06,P006,AML Data Quality,Synthetic Client F S.A.,Professional Services,61561.72,51096.22,10465.49,EUR,FINANCE_RESTRICTED,True
+2026-07,P006,AML Data Quality,Synthetic Client F S.A.,Professional Services,67066.38,55665.09,11401.28,EUR,FINANCE_RESTRICTED,True
+2026-08,P006,AML Data Quality,Synthetic Client F S.A.,Professional Services,49610.12,41176.4,8433.72,EUR,FINANCE_RESTRICTED,True
+2026-09,P006,AML Data Quality,Synthetic Client F S.A.,Professional Services,65604.05,54451.36,11152.69,EUR,FINANCE_RESTRICTED,True
+2026-10,P006,AML Data Quality,Synthetic Client F S.A.,Professional Services,76009.01,63087.48,12921.53,EUR,FINANCE_RESTRICTED,True
+2026-11,P006,AML Data Quality,Synthetic Client F S.A.,Professional Services,62199.55,51625.62,10573.92,EUR,FINANCE_RESTRICTED,True
+2026-12,P006,AML Data Quality,Synthetic Client F S.A.,Professional Services,56299.8,46728.83,9570.97,EUR,FINANCE_RESTRICTED,True
+2026-01,P007,Cyber Resilience Programme,Synthetic Client G S.A.,Professional Services,40206.92,30557.26,9649.66,EUR,FINANCE_RESTRICTED,True
+2026-02,P007,Cyber Resilience Programme,Synthetic Client G S.A.,Professional Services,43568.77,33112.26,10456.5,EUR,FINANCE_RESTRICTED,True
+2026-03,P007,Cyber Resilience Programme,Synthetic Client G S.A.,Professional Services,61455.58,46706.24,14749.34,EUR,FINANCE_RESTRICTED,True
+2026-04,P007,Cyber Resilience Programme,Synthetic Client G S.A.,Professional Services,77778.67,59111.79,18666.88,EUR,FINANCE_RESTRICTED,True
+2026-05,P007,Cyber Resilience Programme,Synthetic Client G S.A.,Professional Services,83354.16,63349.16,20005.0,EUR,FINANCE_RESTRICTED,True
+2026-06,P007,Cyber Resilience Programme,Synthetic Client G S.A.,Professional Services,78781.25,59873.75,18907.5,EUR,FINANCE_RESTRICTED,True
+2026-07,P007,Cyber Resilience Programme,Synthetic Client G S.A.,Professional Services,72551.44,55139.1,17412.35,EUR,FINANCE_RESTRICTED,True
+2026-08,P007,Cyber Resilience Programme,Synthetic Client G S.A.,Professional Services,78231.53,59455.96,18775.57,EUR,FINANCE_RESTRICTED,True
+2026-09,P007,Cyber Resilience Programme,Synthetic Client G S.A.,Professional Services,87933.51,66829.46,21104.04,EUR,FINANCE_RESTRICTED,True
+2026-10,P007,Cyber Resilience Programme,Synthetic Client G S.A.,Professional Services,97591.15,74169.27,23421.88,EUR,FINANCE_RESTRICTED,True
+2026-11,P007,Cyber Resilience Programme,Synthetic Client G S.A.,Professional Services,74389.93,56536.35,17853.58,EUR,FINANCE_RESTRICTED,True
+2026-12,P007,Cyber Resilience Programme,Synthetic Client G S.A.,Professional Services,59757.1,45415.4,14341.71,EUR,FINANCE_RESTRICTED,True
+2026-01,P008,Customer 360 Platform,Synthetic Client H S.A.,Professional Services,22093.34,19663.07,2430.27,EUR,FINANCE_RESTRICTED,True
+2026-02,P008,Customer 360 Platform,Synthetic Client H S.A.,Professional Services,30681.7,27306.71,3374.99,EUR,FINANCE_RESTRICTED,True
+2026-03,P008,Customer 360 Platform,Synthetic Client H S.A.,Professional Services,30063.74,26756.73,3307.01,EUR,FINANCE_RESTRICTED,True
+2026-04,P008,Customer 360 Platform,Synthetic Client H S.A.,Professional Services,44982.99,40034.86,4948.13,EUR,FINANCE_RESTRICTED,True
+2026-05,P008,Customer 360 Platform,Synthetic Client H S.A.,Professional Services,53680.47,47775.61,5904.85,EUR,FINANCE_RESTRICTED,True
+2026-06,P008,Customer 360 Platform,Synthetic Client H S.A.,Professional Services,56595.45,50369.95,6225.5,EUR,FINANCE_RESTRICTED,True
+2026-07,P008,Customer 360 Platform,Synthetic Client H S.A.,Professional Services,47146.61,41960.48,5186.13,EUR,FINANCE_RESTRICTED,True
+2026-08,P008,Customer 360 Platform,Synthetic Client H S.A.,Professional Services,36366.04,32365.77,4000.26,EUR,FINANCE_RESTRICTED,True
+2026-09,P008,Customer 360 Platform,Synthetic Client H S.A.,Professional Services,58962.74,52476.84,6485.9,EUR,FINANCE_RESTRICTED,True
+2026-10,P008,Customer 360 Platform,Synthetic Client H S.A.,Professional Services,61405.36,54650.77,6754.59,EUR,FINANCE_RESTRICTED,True
+2026-11,P008,Customer 360 Platform,Synthetic Client H S.A.,Professional Services,42450.34,37780.8,4669.54,EUR,FINANCE_RESTRICTED,True
+2026-12,P008,Customer 360 Platform,Synthetic Client H S.A.,Professional Services,39971.23,35574.4,4396.84,EUR,FINANCE_RESTRICTED,True
+2026-01,P009,ERP Integration,Synthetic Client I S.A.,Professional Services,25361.21,20035.36,5325.86,EUR,FINANCE_RESTRICTED,True
+2026-02,P009,ERP Integration,Synthetic Client I S.A.,Professional Services,32109.33,25366.37,6742.96,EUR,FINANCE_RESTRICTED,True
+2026-03,P009,ERP Integration,Synthetic Client I S.A.,Professional Services,47640.11,37635.69,10004.42,EUR,FINANCE_RESTRICTED,True
+2026-04,P009,ERP Integration,Synthetic Client I S.A.,Professional Services,64291.92,50790.62,13501.3,EUR,FINANCE_RESTRICTED,True
+2026-05,P009,ERP Integration,Synthetic Client I S.A.,Professional Services,58893.28,46525.69,12367.59,EUR,FINANCE_RESTRICTED,True
+2026-06,P009,ERP Integration,Synthetic Client I S.A.,Professional Services,62797.25,49609.83,13187.42,EUR,FINANCE_RESTRICTED,True
+2026-07,P009,ERP Integration,Synthetic Client I S.A.,Professional Services,88084.74,69586.94,18497.79,EUR,FINANCE_RESTRICTED,True
+2026-08,P009,ERP Integration,Synthetic Client I S.A.,Professional Services,63949.24,50519.9,13429.34,EUR,FINANCE_RESTRICTED,True
+2026-09,P009,ERP Integration,Synthetic Client I S.A.,Professional Services,76227.27,60219.54,16007.73,EUR,FINANCE_RESTRICTED,True
+2026-10,P009,ERP Integration,Synthetic Client I S.A.,Professional Services,83310.13,65815.0,17495.13,EUR,FINANCE_RESTRICTED,True
+2026-11,P009,ERP Integration,Synthetic Client I S.A.,Professional Services,65296.18,51583.98,13712.2,EUR,FINANCE_RESTRICTED,True
+2026-12,P009,ERP Integration,Synthetic Client I S.A.,Professional Services,61039.32,48221.07,12818.26,EUR,FINANCE_RESTRICTED,True
+2026-01,P010,GenAI Knowledge Assistant,Synthetic Client J S.A.,Professional Services,17317.29,12295.27,5022.01,EUR,FINANCE_RESTRICTED,True
+2026-02,P010,GenAI Knowledge Assistant,Synthetic Client J S.A.,Professional Services,24007.19,17045.11,6962.09,EUR,FINANCE_RESTRICTED,True
+2026-03,P010,GenAI Knowledge Assistant,Synthetic Client J S.A.,Professional Services,35116.84,24932.96,10183.88,EUR,FINANCE_RESTRICTED,True
+2026-04,P010,GenAI Knowledge Assistant,Synthetic Client J S.A.,Professional Services,39366.3,27950.07,11416.23,EUR,FINANCE_RESTRICTED,True
+2026-05,P010,GenAI Knowledge Assistant,Synthetic Client J S.A.,Professional Services,52788.72,37479.99,15308.73,EUR,FINANCE_RESTRICTED,True
+2026-06,P010,GenAI Knowledge Assistant,Synthetic Client J S.A.,Professional Services,48472.82,34415.7,14057.12,EUR,FINANCE_RESTRICTED,True
+2026-07,P010,GenAI Knowledge Assistant,Synthetic Client J S.A.,Professional Services,52438.56,37231.38,15207.18,EUR,FINANCE_RESTRICTED,True
+2026-08,P010,GenAI Knowledge Assistant,Synthetic Client J S.A.,Professional Services,36334.64,25797.59,10537.05,EUR,FINANCE_RESTRICTED,True
+2026-09,P010,GenAI Knowledge Assistant,Synthetic Client J S.A.,Professional Services,54374.04,38605.57,15768.47,EUR,FINANCE_RESTRICTED,True
+2026-10,P010,GenAI Knowledge Assistant,Synthetic Client J S.A.,Professional Services,47849.07,33972.84,13876.23,EUR,FINANCE_RESTRICTED,True
+2026-11,P010,GenAI Knowledge Assistant,Synthetic Client J S.A.,Professional Services,49735.14,35311.95,14423.19,EUR,FINANCE_RESTRICTED,True
+2026-12,P010,GenAI Knowledge Assistant,Synthetic Client J S.A.,Professional Services,36299.4,25772.57,10526.82,EUR,FINANCE_RESTRICTED,True
+2026-01,P011,Managed Data Platform,Synthetic Client K S.A.,Managed Services,59220.76,40270.12,18950.64,EUR,FINANCE_RESTRICTED,True
+2026-02,P011,Managed Data Platform,Synthetic Client K S.A.,Managed Services,54458.23,37031.59,17426.63,EUR,FINANCE_RESTRICTED,True
+2026-03,P011,Managed Data Platform,Synthetic Client K S.A.,Managed Services,101763.04,69198.87,32564.17,EUR,FINANCE_RESTRICTED,True
+2026-04,P011,Managed Data Platform,Synthetic Client K S.A.,Managed Services,107242.64,72925.0,34317.65,EUR,FINANCE_RESTRICTED,True
+2026-05,P011,Managed Data Platform,Synthetic Client K S.A.,Managed Services,101114.09,68757.58,32356.51,EUR,FINANCE_RESTRICTED,True
+2026-06,P011,Managed Data Platform,Synthetic Client K S.A.,Managed Services,117849.87,80137.91,37711.96,EUR,FINANCE_RESTRICTED,True
+2026-07,P011,Managed Data Platform,Synthetic Client K S.A.,Managed Services,126856.51,86262.43,40594.08,EUR,FINANCE_RESTRICTED,True
+2026-08,P011,Managed Data Platform,Synthetic Client K S.A.,Managed Services,126082.87,85736.35,40346.52,EUR,FINANCE_RESTRICTED,True
+2026-09,P011,Managed Data Platform,Synthetic Client K S.A.,Managed Services,140930.86,95832.98,45097.87,EUR,FINANCE_RESTRICTED,True
+2026-10,P011,Managed Data Platform,Synthetic Client K S.A.,Managed Services,128956.13,87690.17,41265.96,EUR,FINANCE_RESTRICTED,True
+2026-11,P011,Managed Data Platform,Synthetic Client K S.A.,Managed Services,109390.65,74385.64,35005.01,EUR,FINANCE_RESTRICTED,True
+2026-12,P011,Managed Data Platform,Synthetic Client K S.A.,Managed Services,93334.34,63467.35,29866.99,EUR,FINANCE_RESTRICTED,True
+2026-01,P012,Regulatory Reporting Hub,Synthetic Client L S.A.,Professional Services,24068.61,20699.01,3369.61,EUR,FINANCE_RESTRICTED,True
+2026-02,P012,Regulatory Reporting Hub,Synthetic Client L S.A.,Professional Services,29672.8,25518.61,4154.19,EUR,FINANCE_RESTRICTED,True
+2026-03,P012,Regulatory Reporting Hub,Synthetic Client L S.A.,Professional Services,42236.25,36323.18,5913.08,EUR,FINANCE_RESTRICTED,True
+2026-04,P012,Regulatory Reporting Hub,Synthetic Client L S.A.,Professional Services,50386.79,43332.64,7054.15,EUR,FINANCE_RESTRICTED,True
+2026-05,P012,Regulatory Reporting Hub,Synthetic Client L S.A.,Professional Services,71144.01,61183.85,9960.16,EUR,FINANCE_RESTRICTED,True
+2026-06,P012,Regulatory Reporting Hub,Synthetic Client L S.A.,Professional Services,68946.13,59293.68,9652.46,EUR,FINANCE_RESTRICTED,True
+2026-07,P012,Regulatory Reporting Hub,Synthetic Client L S.A.,Professional Services,62532.15,53777.65,8754.5,EUR,FINANCE_RESTRICTED,True
+2026-08,P012,Regulatory Reporting Hub,Synthetic Client L S.A.,Professional Services,65032.34,55927.81,9104.53,EUR,FINANCE_RESTRICTED,True
+2026-09,P012,Regulatory Reporting Hub,Synthetic Client L S.A.,Professional Services,71641.13,61611.37,10029.76,EUR,FINANCE_RESTRICTED,True
+2026-10,P012,Regulatory Reporting Hub,Synthetic Client L S.A.,Professional Services,89123.93,76646.58,12477.35,EUR,FINANCE_RESTRICTED,True
+2026-11,P012,Regulatory Reporting Hub,Synthetic Client L S.A.,Professional Services,68985.04,59327.14,9657.91,EUR,FINANCE_RESTRICTED,True
+2026-12,P012,Regulatory Reporting Hub,Synthetic Client L S.A.,Professional Services,61830.8,53174.49,8656.31,EUR,FINANCE_RESTRICTED,True

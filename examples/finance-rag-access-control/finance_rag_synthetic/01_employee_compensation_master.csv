@@ -1,0 +1,51 @@
+employee_id,employee_name,department,job_title,rag_access_group,employment_type,fte,work_country,hire_date,annual_base_salary_eur,target_bonus_pct,company_car_annual_cost_eur,meal_vouchers_annual_cost_eur,other_benefits_annual_cost_eur,synthetic_record
+E001,Sophie Lambert,Finance,Finance Director,FINANCE,Permanent,1.0,Luxembourg,2020-04-08,98000,0.12,9000,2200,3600,True
+E002,Marc Hoffmann,Finance,Senior Financial Controller,FINANCE,Permanent,1.0,Luxembourg,2021-07-15,82000,0.1,6000,2200,2400,True
+E003,Elena Rossi,Finance,Management Accountant,FINANCE,Permanent,1.0,Luxembourg,2022-10-20,70000,0.08,0,2200,2400,True
+E004,Thomas Weber,Finance,Payroll & Benefits Specialist,FINANCE,Permanent,1.0,Luxembourg,2023-01-02,66000,0.06,0,2200,2400,True
+E005,Nadia Benali,Finance,Financial Analyst,FINANCE,Permanent,1.0,Luxembourg,2024-04-09,62000,0.06,0,2200,2400,True
+E006,Jean Schmit,Executive,Chief Executive Officer,C_LEVEL,Permanent,1.0,Luxembourg,2025-07-16,180000,0.25,9000,2200,3600,True
+E007,Claire Muller,Executive,Chief Financial Officer,C_LEVEL,Permanent,1.0,Luxembourg,2019-10-20,155000,0.2,9000,2200,3600,True
+E008,Luca Conti,Executive,Chief Technology Officer,C_LEVEL,Permanent,1.0,Luxembourg,2020-01-03,160000,0.2,9000,2200,3600,True
+E009,Amélie Dubois,Executive,Chief Operating Officer,C_LEVEL,Permanent,1.0,Luxembourg,2021-04-10,150000,0.18,9000,2200,3600,True
+E010,David Martin,Project Management,PMO Director,PROJECT_MANAGEMENT,Permanent,1.0,Luxembourg,2022-07-17,105000,0.15,9000,2200,3600,True
+E011,Maya Fernandes,Project Management,Senior Project Manager,PROJECT_MANAGEMENT,Permanent,1.0,Luxembourg,2023-10-20,88000,0.1,6000,2200,2400,True
+E012,Julien Bernard,Project Management,Senior Project Manager,PROJECT_MANAGEMENT,Permanent,1.0,Luxembourg,2024-01-04,86000,0.1,6000,2200,2400,True
+E013,Sara Khan,Project Management,Project Manager,PROJECT_MANAGEMENT,Permanent,1.0,Luxembourg,2025-04-11,76000,0.08,0,2200,2400,True
+E014,Nicolas Wagner,Project Management,Project Manager,PROJECT_MANAGEMENT,Permanent,1.0,Luxembourg,2019-07-18,74000,0.08,0,2200,2400,True
+E015,Inès Petit,Project Management,PMO Analyst,PROJECT_MANAGEMENT,Permanent,1.0,Luxembourg,2020-10-20,61000,0.05,0,2200,2400,True
+E016,Olivier Lefevre,Project Management,Resource Manager,PROJECT_MANAGEMENT,Permanent,1.0,Luxembourg,2021-01-05,72000,0.08,0,2200,2400,True
+E017,Amina Amar,Data & AI,Principal Data & AI Architect,NORMAL_EMPLOYEE,Permanent,1.0,Luxembourg,2025-02-20,122000,0.14,9000,2200,3600,True
+E018,Gabriel Simon,Data & AI,Senior Data Architect,NORMAL_EMPLOYEE,Permanent,1.0,Luxembourg,2020-07-10,100000,0.12,9000,2200,3600,True
+E019,Eva Moreau,Data & AI,Senior AI Engineer,NORMAL_EMPLOYEE,Permanent,1.0,Luxembourg,2021-12-20,102000,0.12,9000,2200,3600,True
+E020,Antoine Robert,Data & AI,Data Engineer,NORMAL_EMPLOYEE,Permanent,1.0,Luxembourg,2022-05-05,79000,0.08,6000,2200,2400,True
+E021,Lea Nguyen,Data & AI,ML Engineer,NORMAL_EMPLOYEE,Permanent,1.0,Luxembourg,2023-10-16,76000,0.08,0,2200,2400,True
+E022,Hugo Laurent,Data & AI,Data Scientist,NORMAL_EMPLOYEE,Permanent,1.0,Luxembourg,2024-03-20,75000,0.08,0,2200,2400,True
+E023,Mila Costa,Cloud & Platform,Cloud Architect,NORMAL_EMPLOYEE,Permanent,1.0,Luxembourg,2025-08-11,104000,0.12,9000,2200,3600,True
+E024,Louis Fontaine,Cloud & Platform,DevOps Engineer,NORMAL_EMPLOYEE,Permanent,1.0,Luxembourg,2020-01-20,83000,0.08,6000,2200,2400,True
+E025,Camille Garcia,Cloud & Platform,Platform Engineer,NORMAL_EMPLOYEE,Permanent,1.0,Luxembourg,2021-06-06,72000,0.08,0,2200,2400,True
+E026,Noah Durand,Cybersecurity,Security Architect,NORMAL_EMPLOYEE,Permanent,1.0,Luxembourg,2022-11-17,120000,0.12,9000,2200,3600,True
+E027,Emma Lopez,Cybersecurity,Security Engineer,NORMAL_EMPLOYEE,Permanent,1.0,Luxembourg,2023-04-01,89000,0.08,6000,2200,2400,True
+E028,Arthur Mercier,Consulting,Senior Business Consultant,NORMAL_EMPLOYEE,Permanent,1.0,Luxembourg,2024-09-12,96000,0.1,9000,2200,3600,True
+E029,Chloé Diallo,Consulting,Business Consultant,NORMAL_EMPLOYEE,Permanent,1.0,Luxembourg,2025-02-20,68000,0.07,0,2200,2400,True
+E030,Rayan Fischer,Applications,Senior Software Engineer,NORMAL_EMPLOYEE,Permanent,1.0,Luxembourg,2020-07-07,93000,0.1,6000,2200,3600,True
+E031,Lucie Pereira,Applications,Software Engineer,NORMAL_EMPLOYEE,Permanent,1.0,Luxembourg,2021-12-18,71000,0.07,0,2200,2400,True
+E032,Maxime Richard,Applications,QA Engineer,NORMAL_EMPLOYEE,Permanent,1.0,Luxembourg,2022-05-02,71000,0.06,0,2200,2400,True
+E033,Aya Bauer,Sales,Account Director,NORMAL_EMPLOYEE,Permanent,1.0,Luxembourg,2023-10-13,100000,0.2,9000,2200,3600,True
+E034,Victor Renard,Sales,Account Manager,NORMAL_EMPLOYEE,Permanent,1.0,Luxembourg,2024-03-20,75000,0.15,0,2200,2400,True
+E035,Alice Meier,HR,HR Business Partner,NORMAL_EMPLOYEE,Permanent,1.0,Luxembourg,2025-08-08,73000,0.08,0,2200,2400,True
+E036,Nathan Cohen,HR,Talent Acquisition Specialist,NORMAL_EMPLOYEE,Permanent,1.0,Luxembourg,2020-01-19,63000,0.06,0,2200,2400,True
+E037,Lina Gomes,Operations,Office & Operations Manager,NORMAL_EMPLOYEE,Permanent,1.0,Luxembourg,2021-06-03,75000,0.07,0,2200,2400,True
+E038,Paul Lemoine,Data & AI,Principal Data & AI Architect,NORMAL_EMPLOYEE,Permanent,1.0,Luxembourg,2022-11-14,120000,0.14,9000,2200,3600,True
+E039,Jade Santos,Data & AI,Senior Data Architect,NORMAL_EMPLOYEE,Permanent,1.0,Luxembourg,2023-04-20,100000,0.12,9000,2200,3600,True
+E040,Adam Klein,Data & AI,Senior AI Engineer,NORMAL_EMPLOYEE,Permanent,1.0,Luxembourg,2024-09-09,92000,0.12,6000,2200,3600,True
+E041,Zoé Marques,Data & AI,Data Engineer,NORMAL_EMPLOYEE,Permanent,1.0,Luxembourg,2025-02-20,76000,0.08,0,2200,2400,True
+E042,Samuel Jung,Data & AI,ML Engineer,NORMAL_EMPLOYEE,Permanent,1.0,Luxembourg,2020-07-04,80000,0.08,6000,2200,2400,True
+E043,Manon Franco,Data & AI,Data Scientist,NORMAL_EMPLOYEE,Permanent,1.0,Luxembourg,2021-12-15,78000,0.08,6000,2200,2400,True
+E044,Yanis Vidal,Cloud & Platform,Cloud Architect,NORMAL_EMPLOYEE,Permanent,1.0,Luxembourg,2022-05-20,97000,0.12,9000,2200,3600,True
+E045,Louise Carvalho,Cloud & Platform,DevOps Engineer,NORMAL_EMPLOYEE,Permanent,1.0,Luxembourg,2023-10-10,78000,0.08,6000,2200,2400,True
+E046,Alexandre Blanc,Cloud & Platform,Platform Engineer,NORMAL_EMPLOYEE,Permanent,1.0,Luxembourg,2024-03-20,76000,0.08,0,2200,2400,True
+E047,Mia Nowak,Cybersecurity,Security Architect,NORMAL_EMPLOYEE,Permanent,1.0,Luxembourg,2025-08-05,119000,0.12,9000,2200,3600,True
+E048,Raphaël Meyer,Cybersecurity,Security Engineer,NORMAL_EMPLOYEE,Permanent,1.0,Luxembourg,2020-01-16,93000,0.08,6000,2200,3600,True
+E049,Nora Aydin,Consulting,Senior Business Consultant,NORMAL_EMPLOYEE,Permanent,1.0,Luxembourg,2021-06-20,93000,0.1,6000,2200,3600,True
+E050,Mathis Girard,Consulting,Business Consultant,NORMAL_EMPLOYEE,Permanent,1.0,Luxembourg,2022-11-11,66000,0.07,0,2200,2400,True
